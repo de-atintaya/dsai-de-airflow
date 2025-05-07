@@ -15,7 +15,7 @@ def upload_to_adls(
             return
         
         # Connect using the connection created in UI
-        hook = WasbHook(wasb_conn_id="azure_blob_storage")    
+        hook = WasbHook(wasb_conn_id="azure_de")    
         hook.load_file(
             file_path=local_file_path,
             container_name=container_name,
