@@ -16,7 +16,7 @@ default_args = {
 
 
 @dag(
-    dag_id="06_dag_azure_pro",
+    dag_id="g4_drfg",
     description="Uploads a local file to Azure Blob Storage with a date suffix.",
     default_args=default_args,
     start_date=datetime(2025, 1, 1, tzinfo=timezone("America/Bogota")),
