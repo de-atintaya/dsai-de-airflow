@@ -1,0 +1,4 @@
+mysql-connector-python==8.0.33
+pymongo>=4.6.0
+boto3>=1.26.0
+azure-storage-blob>=12.14.0

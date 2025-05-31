@@ -51,6 +51,8 @@ x-airflow-common:
   # and uncomment the "build" line below, Then run `docker-compose build` to build the images.
   # image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:3.0.0}
   build: .
+  env_file:
+    - .env
   environment:
     &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
@@ -87,6 +89,10 @@ x-airflow-common:
     redis:
       condition: service_healthy
     postgres:
+      condition: service_healthy
+    mysql:
+      condition: service_healthy
+    mongodb:
       condition: service_healthy
 
 services:
@@ -305,5 +311,47 @@ services:
       airflow-init:
         condition: service_completed_successfully
 
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: airflow
+      MYSQL_USER: airflow
+      MYSQL_PASSWORD: airflow
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-db-volume:/var/lib/mysql
+      - ./init-database.sql:/docker-entrypoint-initdb.d/init-database.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "airflow", "-p$MYSQL_PASSWORD"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+    restart: always
+
+  mongodb:
+    image: mongo:7.0
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin123
+      MONGO_INITDB_DATABASE: airflow_db
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data-volume:/data/db
+      - mongodb-config-volume:/data/configdb
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+    restart: always
+
 volumes:
   postgres-db-volume:
+  mysql-db-volume:
+  mongodb-data-volume:
+  mongodb-config-volume:
