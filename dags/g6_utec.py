@@ -5,7 +5,7 @@ import os
 from scripts.azure_upload import upload_to_adls
 from scripts.helpers import add_date_suffix
 
-LOCAL_FOLDER_PATH = "/opt/airflow/data/local-server"
+LOCAL_FOLDER_PATH = "/opt/airflow/data/server"
 CONTAINER_NAME = "datalake"
 WASB_CONN_ID = "utec_blob_storage"
 BLOB_NAME = "raw/airflow/G6/"
@@ -17,7 +17,7 @@ default_args = {
 }
 
 @dag(
-    dag_id="g1_upload_multiple_files_raw",
+    dag_id="g6_utec",
     description="Uploads multiple local files to Azure Blob Storage with a date suffix.",
     default_args=default_args,
     start_date=datetime(2025, 1, 1, tzinfo=timezone("America/Bogota")),
