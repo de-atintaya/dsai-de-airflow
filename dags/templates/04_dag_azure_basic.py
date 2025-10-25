@@ -30,7 +30,7 @@ def upload_dag():
         container_name = "airflow"
         
         # The name the blob will have in Azure
-        blob_name = "raw/uploaded_sample_v1.txt"
+        blob_name = "raw/g6_uploaded_sample_v1.txt"
 
         # Upload the file
         hook.load_file(

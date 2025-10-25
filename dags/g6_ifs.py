@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 LOCAL_FILE_PATH = "/opt/airflow/data/sample_g6_ifs.txt"
 CONTAINER_NAME = "airflow"
-BLOB_NAME = "raw/G0/archivo_subido_g6_ifs.txt"
+BLOB_NAME = "raw/G6/archivo_subido_g6_ifs.txt"
 
 default_args = {
     'owner': 'airflow',
