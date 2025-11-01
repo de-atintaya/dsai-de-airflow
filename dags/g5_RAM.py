@@ -5,25 +5,25 @@ from scripts.helpers import add_date_suffix
 from datetime import datetime, timedelta
 
 LOCAL_FILE_PATH = "/opt/airflow/data/sample.txt"
-CONTAINER_NAME = "datalake" # airflow
-# WASB_CONN_ID = "utec_blob_storage"
+CONTAINER_NAME = "airflow"
 WASB_CONN_ID = "azure_blob_stg"
-BLOB_NAME = "raw/airflow/G0/archivo_subido.txt"
+BLOB_NAME = "raw/G0/archivo_G5_test.txt"
 
 default_args = {
-    'owner': 'airflow',
+    'owner': 'Grupo5',
     'retries': 1,
     'retry_delay': timedelta(minutes=1),
 }
 
+
 @dag(
-    dag_id="g0_utec",
+    dag_id="g5_RAM",
     description="Uploads a local file to Azure Blob Storage with a date suffix.",
     default_args=default_args,
     start_date=datetime(2025, 1, 1, tzinfo=timezone("America/Bogota")),
     schedule="0 12 * * 1", # Runs every monday at 12:00 local time (GMT-5)
     catchup=False,
-    tags=["utec", "blob", "upload"],
+    tags=["azure", "blob", "upload"],
 )
 def upload_dag():
 

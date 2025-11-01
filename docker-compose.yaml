@@ -33,7 +33,7 @@
 #
 # _AIRFLOW_WWW_USER_USERNAME   - Username for the administrator account (if requested).
 #                                Default: airflow
-# _AIRFLOW_WWW_USER_PASSWORD   - Password for the administrator account (if requested).
+# _AIRFLOW_WWW_USER_PASSWORD   - Password for the administrator-airflow account (if requested).
 #                                Default: airflow
 # _PIP_ADDITIONAL_REQUIREMENTS - Additional PIP requirements to add when starting all containers.
 #                                Use this option ONLY for quick checks. Installing requirements at container
