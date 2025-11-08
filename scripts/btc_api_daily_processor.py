@@ -1,7 +1,7 @@
 import polars as pl
 import os
 import logging
-from scripts.azure_upload import upload_delta_lake_to_adls
+from airflow.exceptions import AirflowFailException
 
 # -- Logging Configuration --
 log = logging.getLogger("airflow.task")
@@ -11,17 +11,11 @@ log = logging.getLogger("airflow.task")
 INPUT_DIR = "data"
 # Path for the output Delta Lake table.
 OUTPUT_DELTA_TABLE = "data/btc_daily_stats.delta"
-CONTAINER_NAME = "airflow"
-REMOTE_DELTA_TABLE_NAME = "raw/airflow/g4/btc_daily_stats"
-WASB_CONN_ID = "azure_blob_storage"
 
 
-def analyze_data(
+def process_and_save_daily_stats(
     INPUT_DIR: str = INPUT_DIR,
     OUTPUT_DELTA_TABLE: str = OUTPUT_DELTA_TABLE,
-    CONTAINER_NAME: str = CONTAINER_NAME,
-    REMOTE_DELTA_TABLE_NAME: str = REMOTE_DELTA_TABLE_NAME,
-    WASB_CONN_ID: str = WASB_CONN_ID,
 ):
     """
     Reads all Parquet files from the input directory, calculates daily
@@ -36,7 +30,9 @@ def analyze_data(
     except Exception as e:
         log.error(f"An error occurred while reading Parquet files: {e}")
         log.warning("Please ensure there are Parquet files in the specified directory.")
-        return
+        raise AirflowFailException(
+            "Failed to read Parquet files. Check if the source directory and files are correct."
+        )
 
     log.info("Calculating daily statistics...")
 
@@ -69,7 +65,7 @@ def analyze_data(
 
     if final_df.is_empty():
         log.warning("No data found to process. Exiting.")
-        return
+        raise AirflowFailException("No data was produced after processing the files.")
 
     log.info("Daily statistics calculated:")
     log.info(f"\n{final_df}")
@@ -79,24 +75,13 @@ def analyze_data(
         final_df.write_delta(OUTPUT_DELTA_TABLE, mode="overwrite")
         log.info("Successfully wrote to Delta Lake table.")
 
-        # Upload the Delta Lake table to Azure
-        upload_delta_lake_to_adls(
-            local_delta_table_path=OUTPUT_DELTA_TABLE,
-            container_name=CONTAINER_NAME,
-            remote_delta_table_name=REMOTE_DELTA_TABLE_NAME,
-            wasb_conn_id=WASB_CONN_ID,
-        )
     except Exception as e:
-        log.error(
-            f"An error occurred while writing to the Delta Lake table or uploading to Azure: {e}"
-        )
+        log.error(f"An error occurred while writing to the Delta Lake table: {e}")
+        raise AirflowFailException("Failed to write to Delta Lake table.")
 
 
 if __name__ == "__main__":
-    analyze_data(
+    process_and_save_daily_stats(
         INPUT_DIR=INPUT_DIR,
         OUTPUT_DELTA_TABLE=OUTPUT_DELTA_TABLE,
-        CONTAINER_NAME=CONTAINER_NAME,
-        REMOTE_DELTA_TABLE_NAME=REMOTE_DELTA_TABLE_NAME,
-        WASB_CONN_ID=WASB_CONN_ID,
     )

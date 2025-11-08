@@ -4,17 +4,14 @@ import polars as pl
 from datetime import datetime, timedelta
 import logging
 import os
-from scripts.azure_upload import upload_to_adls
+from airflow.exceptions import AirflowFailException
 
 # -- Logging Configuration --
 log = logging.getLogger("airflow.task")
 
 
-async def collect_data(
+async def collect_and_save_data(
     OUTPUT_FILE: str,
-    BLOB_NAME: str,
-    CONTAINER_NAME: str,
-    WASB_CONN_ID: str,
     API_URL: str = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT",
     COLLECTION_INTERVAL_SECONDS: int = 10,
     TOTAL_DURATION_MINUTES: int = 1,
@@ -49,8 +46,10 @@ async def collect_data(
 
             except aiohttp.ClientError as e:
                 log.error(f"An error occurred while requesting data: {e}")
+                raise AirflowFailException(f"API request failed: {e}")
             except Exception as e:
                 log.error(f"An unexpected error occurred: {e}")
+                raise
 
             # Wait for the next interval
             elapsed_time = asyncio.get_event_loop().time() - loop_start_time
@@ -59,7 +58,7 @@ async def collect_data(
 
     if not collected_data:
         log.warning("No data was collected. Exiting.")
-        return
+        raise AirflowFailException("No data was collected from the API.")
 
     # Convert to polars DataFrame and save as Parquet
     df = pl.DataFrame(collected_data)
@@ -78,18 +77,9 @@ async def collect_data(
         log.info(
             f"Data collection finished. Saved {len(df)} records to '{OUTPUT_FILE}'."
         )
-
-        # Upload the file to Azure
-        upload_to_adls(
-            local_file_path=OUTPUT_FILE,
-            container_name=CONTAINER_NAME,
-            blob_name=BLOB_NAME,
-            wasb_conn_id=WASB_CONN_ID,
-        )
     except Exception as e:
-        log.error(
-            f"An error occurred while saving the Parquet file or uploading to Azure: {e}"
-        )
+        log.error(f"An error occurred while saving the Parquet file: {e}")
+        raise AirflowFailException(f"Failed to save Parquet file: {e}")
 
 
 if __name__ == "__main__":
@@ -97,15 +87,9 @@ if __name__ == "__main__":
     output_dir = "data"
     now_iso = datetime.now().isoformat()
     output_file = f"{output_dir}/btc_prices_{now_iso}.parquet"
-    blob_name = f"raw/airflow/g4/btc_prices/{os.path.basename(output_file)}"
-    container_name = "airflow"
-    wasb_conn_id = "azure_blob_storage"
 
     asyncio.run(
-        collect_data(
+        collect_and_save_data(
             OUTPUT_FILE=output_file,
-            BLOB_NAME=blob_name,
-            CONTAINER_NAME=container_name,
-            WASB_CONN_ID=wasb_conn_id,
         )
     )

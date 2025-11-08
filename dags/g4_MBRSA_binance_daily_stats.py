@@ -1,7 +1,8 @@
 from airflow.decorators import dag, task
 from pendulum import timezone
 from datetime import datetime, timedelta
-from scripts.btc_api_daily_processor import analyze_data
+from scripts.btc_api_daily_processor import process_and_save_daily_stats
+from scripts.azure_upload import upload_delta_lake_to_adls
 
 # -- Configuration --
 INPUT_DIR = "data"
@@ -20,7 +21,7 @@ default_args = {
 
 @dag(
     dag_id="g4_MBRSA_binance_daily_stats",
-    description="Runs the Binance BTC daily stats processor.",
+    description="Processes Binance BTC data and uploads daily stats to Azure.",
     default_args=default_args,
     start_date=datetime(2025, 1, 1, tzinfo=timezone("America/Bogota")),
     schedule="0 */12 * * *",
@@ -29,16 +30,30 @@ default_args = {
 )
 def binance_daily_stats_dag():
     @task
-    def run_daily_processor():
-        analyze_data(
+    def process_data():
+        """
+        Processes local parquet files to generate daily statistics and saves them
+        to a local Delta Lake table.
+        """
+        process_and_save_daily_stats(
             INPUT_DIR=INPUT_DIR,
             OUTPUT_DELTA_TABLE=OUTPUT_DELTA_TABLE,
-            CONTAINER_NAME=CONTAINER_NAME,
-            REMOTE_DELTA_TABLE_NAME=REMOTE_DELTA_TABLE_NAME,
-            WASB_CONN_ID=WASB_CONN_ID,
         )
 
-    run_daily_processor()
+    @task
+    def upload_to_azure():
+        """
+        Uploads the local Delta Lake table to Azure Data Lake Storage.
+        """
+        upload_delta_lake_to_adls(
+            local_delta_table_path=OUTPUT_DELTA_TABLE,
+            container_name=CONTAINER_NAME,
+            remote_delta_table_name=REMOTE_DELTA_TABLE_NAME,
+            wasb_conn_id=WASB_CONN_ID,
+        )
+
+    # Set task dependency
+    process_data() >> upload_to_azure()
 
 
 dag = binance_daily_stats_dag()
