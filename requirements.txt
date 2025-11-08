@@ -1,0 +1,4 @@
+aiohttp==3.13.2
+polars==1.35.1
+pyarrow==22.0.0
+deltalake==1.2.1
