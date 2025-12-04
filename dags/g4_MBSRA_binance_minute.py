@@ -33,18 +33,20 @@ def binance_downloader_dag():
         # Generate dynamic file paths inside the task to ensure uniqueness for each run
         now_iso = datetime.now().isoformat()
         output_dir = "data"
-        output_file = f"{output_dir}/btc_prices_{now_iso}.parquet"
-        blob_name = f"raw/airflow/g4/btc_prices/{os.path.basename(output_file)}"
+        output_file = f"{output_dir}/crypto_prices_{now_iso}.parquet"
+        blob_name = f"raw/airflow/g4/crypto_prices/{os.path.basename(output_file)}"
 
         # Default script parameters
-        api_url = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT"
+        base_url = "https://api.binance.com/api/v3/ticker/price"
+        symbols = ["BTCUSDT", "ETHUSDT", "SOLUSDT"]
         collection_interval_seconds = 10
         total_duration_minutes = 1
 
         asyncio.run(
             collect_and_save_data(
                 OUTPUT_FILE=output_file,
-                API_URL=api_url,
+                SYMBOLS=symbols,
+                BASE_URL=base_url,
                 COLLECTION_INTERVAL_SECONDS=collection_interval_seconds,
                 TOTAL_DURATION_MINUTES=total_duration_minutes,
             )

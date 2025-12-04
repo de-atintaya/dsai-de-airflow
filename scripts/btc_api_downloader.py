@@ -10,9 +10,17 @@ from airflow.exceptions import AirflowFailException
 log = logging.getLogger("airflow.task")
 
 
+async def fetch_symbol_data(session, base_url, symbol):
+    url = f"{base_url}?symbol={symbol}"
+    async with session.get(url) as response:
+        response.raise_for_status()
+        return await response.json()
+
+
 async def collect_and_save_data(
     OUTPUT_FILE: str,
-    API_URL: str = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT",
+    SYMBOLS: list[str] = ["BTCUSDT", "ETHUSDT", "SOLUSDT"],
+    BASE_URL: str = "https://api.binance.com/api/v3/ticker/price",
     COLLECTION_INTERVAL_SECONDS: int = 10,
     TOTAL_DURATION_MINUTES: int = 1,
 ):
@@ -32,12 +40,15 @@ async def collect_and_save_data(
             loop_start_time = asyncio.get_event_loop().time()
 
             try:
-                async with session.get(API_URL) as response:
-                    response.raise_for_status()  # Raise an exception for bad status codes
-                    data = await response.json()
+                tasks = [
+                    fetch_symbol_data(session, BASE_URL, symbol) for symbol in SYMBOLS
+                ]
+                results = await asyncio.gather(*tasks)
 
+                timestamp = datetime.now()
+                for data in results:
                     # Add a timestamp to the collected data
-                    data["timestamp"] = datetime.now()
+                    data["timestamp"] = timestamp
                     collected_data.append(data)
 
                     log.info(
@@ -86,7 +97,7 @@ if __name__ == "__main__":
     # -- Configuration for local run --
     output_dir = "data"
     now_iso = datetime.now().isoformat()
-    output_file = f"{output_dir}/btc_prices_{now_iso}.parquet"
+    output_file = f"{output_dir}/crypto_prices_{now_iso}.parquet"
 
     asyncio.run(
         collect_and_save_data(
