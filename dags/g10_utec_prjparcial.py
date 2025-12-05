@@ -7,8 +7,8 @@ from pathlib import Path
 import os
 
 #LOCAL_FILE_PATH = "/opt/airflow/data/sample.txt"
-SOURCE_DIR = "/opt/airflow/data/parcial"   # <-- aquí está tu carpeta 'parcial'
-DEST_PREFIX = "raw/airflow/G10/parcial"           # raíz destino en el contenedor
+SOURCE_DIR = "/opt/airflow/data/final"   # <-- aquí está tu carpeta 'parcial'
+DEST_PREFIX = "raw/airflow/G10/final"           # raíz destino en el contenedor
 USE_DATE_SUFFIX_ON_ROOT = False  # pon True si quieres raw/airflow/G10/parcial_YYYYMMDD/...
 
 
