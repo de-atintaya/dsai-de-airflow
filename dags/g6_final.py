@@ -51,14 +51,14 @@ def upload_dag():
         return upload_params # Retorna una lista de diccionarios de parámetros
 
     @task
-    def call_upload(params: dict):
+    def call_upload(file_config: dict):
         """
         Tarea que se ejecutará N veces, una por cada elemento mapeado.
-        'params' contendrá el diccionario de un único archivo.
+        'file_config' contendrá el diccionario de un único archivo.
         """
         # Desempaquetar los parámetros
-        local_path = params["local_file_path"]
-        blob_base = params["blob_name_base"]
+        local_path = file_config["local_file_path"]
+        blob_base = file_config["blob_name_base"]
         
         new_blob_name = add_date_suffix(blob_base) 
         
@@ -80,6 +80,6 @@ def upload_dag():
         azure_base_blob_path=AZURE_BASE_BLOB_PATH
     )
 
-    upload_task = call_upload.expand(params=upload_list) 
+    upload_task = call_upload.expand(file_config=upload_list)
 
 dag = upload_dag()
