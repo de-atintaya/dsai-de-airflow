@@ -1,0 +1,151 @@
+id_cliente,nombre_cliente,razon_social,ruc_dni,telefono,correo,direccion,fecha_registro,tipo_cliente,preferencia_contacto
+CL-0001,Maria Flores,Richmond LLC,419-50-5353,601-371-1438x61493,maria.flores@email.com,Av. Proceres de la Independencia 1234,20/04/2024,Natural,email
+CL-0002,Carlos Garcia,"Porter, Turner and Dominguez",509-40-5187,001-315-205-7755x6794,carlos.garcia@email.com,"Calle 18 Mz C Lt 5, Urb. El Retablo",17/04/2025,Empresa,ambos
+CL-0003,Ana Diaz,Williams-Valdez,304-80-6742,+1-518-354-5084x08124,ana.diaz@email.com,"Calle Ocharan 400, Dpto 101",09/05/2021,Empresa,ambos
+CL-0004,Miguel Rojas,"Willis, Martin and Estes",859-27-6454,+1-179-599-6506x79971,miguel.rojas@email.com,Jiron El Polo 1587,31/05/2021,Empresa,email
+CL-0005,Sofia Chavez,Hansen PLC,482-98-5810,001-905-342-0468x568,sofia.chavez@email.com,Av. Javier Prado Este 2500,12/07/2021,Empresa,email
+CL-0006,Luis Huaman,Thomas LLC,326-52-2855,263-436-2911x6054,luis.huaman@email.com,Av. Alameda del Corregidor 890,27/04/2024,Empresa,email
+CL-0007,Camila Mendoza,"Elliott, Rodriguez and Turner",361-25-4299,-3181,camila.mendoza@email.com,Av. Cuba 750,20/01/2023,Natural,ambos
+CL-0008,Jose Perez,Rose Group,876-27-0866,001-721-814-0760x3106,jose.perez@email.com,Jr. Risso 333,17/05/2022,Natural,email
+CL-0009,Lucia Soto,"Richardson, Snyder and Simmons",499-13-9236,(336)009-6670,lucia.soto@email.com,Av. Bolivar 905,31/07/2023,Natural,email
+CL-0010,Pedro Vargas,"Perez, Forbes and Cameron",580-93-8329,+1-868-321-6978x35690,pedro.vargas@email.com,Jr. Saenz Pena 412,24/02/2023,Empresa,email
+CL-0011,Rosa Castillo,Carroll and Sons,399-20-3262,(625)502-6233x41528,rosa.castillo@email.com,Av. La Marina 2000,30/08/2025,Natural,ambos
+CL-0012,Javier Ramos,"Dominguez, Gomez and Guerra",805-64-0078,(567)256-6139,javier.ramos@email.com,Av. Carretera Central Km 7.5,17/12/2023,Natural,ambos
+CL-0013,Valeria Torres,Romero LLC,388-21-9759,547.860.6407,valeria.torres@email.com,Av. Huaylas 110,22/01/2021,Empresa,sms
+CL-0014,Diego Cardenas,Rodriguez-Thompson,537-23-3101,(630)423-7023x7241,diego.cardenas@email.com,Calle San Martin 555,12/08/2025,Empresa,sms
+CL-0015,Elena Leon,Coleman-White,226-84-3164,(764)646-0423x8644,elena.leon@email.com,Av. Tupac Amaru 3450,23/03/2024,Natural,ambos
+CL-0016,Ricardo Nunez,"Blevins, Jenkins and Warren",741-76-7666,013.645.4438,ricardo.nunez@email.com,Jr. Aguarico 222,14/02/2023,Natural,ambos
+CL-0017,Patricia Luna,Roth Group,852-39-7375,(642)498-4803x58799,patricia.luna@email.com,Av. Faucett 600,08/11/2021,Empresa,sms
+CL-0018,Alejandro Vega,Fernandez LLC,462-52-5959,7406229332,alejandro.vega@email.com,"Mz D Lt 10, Urb. Satelite",06/05/2024,Natural,sms
+CL-0019,Andrea Quiroz,Peck LLC,810-97-4329,-9180,andrea.quiroz@email.com,Av. Principal 140,02/12/2025,Natural,ambos
+CL-0020,Fernando Sarmiento,Morgan PLC,579-76-6961,296.520.9583,fernando.sarmiento@email.com,Jiron Ancash 200,25/05/2022,Empresa,ambos
+CL-0021,Gabriela Reyes,Leon-Buck,002-31-9427,(991)335-6901,gabriela.reyes@email.com,"Sector 2, Grupo 15, Mz B",03/05/2022,Empresa,email
+CL-0022,Hector Palacios,Phillips Group,869-02-0403,(394)325-6383,hector.palacios@email.com,Av. Canta Callao 300,02/06/2021,Natural,ambos
+CL-0023,Isabel Ruiz,Howard-Malone,444-66-7499,+1-275-224-8991x66928,isabel.ruiz@email.com,Av. Las Palmeras 1850,17/06/2022,Empresa,ambos
+CL-0024,Jorge Guerrero,Dean Group,481-84-8669,001-430-702-3675x122,jorge.guerrero@email.com,Carretera Canta 100,04/03/2021,Empresa,ambos
+CL-0025,Karla Mora,Mason-Carney,204-81-5886,001-858-636-3111x5513,karla.mora@email.com,Sector Huertos de Manchay,05/03/2024,Empresa,sms
+CL-0026,Manuel Ochoa,Boone-Butler,136-72-0744,7201222278,manuel.ochoa@email.com,Av. Cultura 100,18/06/2025,Natural,ambos
+CL-0027,Natalia Paredes,"Evans, Davenport and Chaney",835-11-7348,(061)019-1243x896,natalia.paredes@email.com,Av. Salvador Allende 999,07/03/2021,Empresa,sms
+CL-0028,Oscar Zevallos,Frazier and Sons,780-03-8575,+1-795-709-8554x1261,oscar.zevallos@email.com,Calle Los Sauces 45,15/11/2024,Empresa,email
+CL-0029,Veronica Vidal,"Velez, Spence and Lopez",124-79-4431,720.500.3817x5411,veronica.vidal@email.com,Antigua Panamericana Sur Km 35,14/05/2022,Natural,sms
+CL-0030,Raul Valdez,Carter-Stewart,442-49-5075,(685)337-8581x75979,raul.valdez@email.com,Av. Samuel Alcazar 600,11/12/2022,Empresa,email
+CL-0031,Silvia Cabrera,"Thompson, Anderson and Walsh",714-90-0839,-5950,silvia.cabrera@email.com,Av. San Borja Sur 500,03/11/2022,Empresa,email
+CL-0032,Tomas Herrera,Robinson PLC,381-86-7073,(922)623-2576x424,tomas.herrera@email.com,Calle Los Halcones 88,09/12/2022,Natural,email
+CL-0033,Ursula Mejia,Cole Ltd,557-47-9746,796.398.0866x66402,ursula.mejia@email.com,Paseo de la Republica 3200,21/01/2024,Empresa,sms
+CL-0034,Victor Salazar,Hansen-Evans,734-48-1461,949.489.6260x4061,victor.salazar@email.com,Jr. El Remanso 105,09/05/2023,Natural,sms
+CL-0035,Wendy Espinoza,"Rodriguez, Ayala and Caldwell",449-13-7798,083-676-0773,wendy.espinoza@email.com,Av. Pardo de Zela 1100,18/10/2022,Natural,ambos
+CL-0036,Ximena Acuna,"Moreno, Blanchard and Smith",857-63-6735,001-948-213-2056x8363,ximena.acuna@email.com,Calle Julio C. Tello 400,04/07/2023,Natural,ambos
+CL-0037,Yair Bardales,Bush-Mcdaniel,395-55-9188,877.104.7827,yair.bardales@email.com,Av. Elmer Faucett 100,20/12/2022,Empresa,email
+CL-0038,Zoila Correa,"Santos, Hunt and Harmon",609-32-9759,665.246.6873x2143,zoila.correa@email.com,Av. Caminos del Inca 1650,29/09/2024,Empresa,ambos
+CL-0039,Alberto Delgado,Reed-Smith,491-23-0625,525.052.8340,alberto.delgado@email.com,Av. San Felipe 1010,28/03/2023,Natural,sms
+CL-0040,Beatriz Echegaray,"Young, Clark and Newman",416-13-6091,820-299-1725x937,beatriz.echegaray@email.com,Alameda Sur 99,19/12/2021,Natural,sms
+CL-0041,Cesar Fernandez,"Mccoy, Patterson and Davenport",111-56-7299,001-429-677-9631x6987,cesar.fernandez@email.com,Jr. Comandante Espinar 300,24/10/2025,Empresa,sms
+CL-0042,Diana Gomez,"Smith, Ramirez and Ellison",376-99-6278,(599)895-0755x42243,diana.gomez@email.com,Av. Wiesse 500,12/12/2020,Natural,sms
+CL-0043,Ernesto Ibarra,Ellis-Simpson,428-94-8272,+1-902-175-3439x66706,ernesto.ibarra@email.com,Av. Universitaria Norte 700,02/08/2025,Natural,email
+CL-0044,Flor Jimenez,Page-Montoya,201-50-5694,+1-690-471-4068x09655,flor.jimenez@email.com,Calle Miguel Dasso 150,24/01/2022,Natural,sms
+CL-0045,Guillermo Kano,"Pope, Ramirez and Griffin",884-41-5097,196.860.2113,guillermo.kano@email.com,Av. Pardo 1300,09/02/2021,Natural,ambos
+CL-0046,Hugo Lopez,Carrillo-Richardson,646-10-6817,(111)930-8951x607,hugo.lopez@email.com,Av. Angelica Gamarra 400,19/07/2023,Natural,email
+CL-0047,Irma Montoya,"Banks, Williams and Wright",699-15-3554,368-739-1511x5356,irma.montoya@email.com,Calle Los Duraznos 50,14/01/2022,Natural,email
+CL-0048,Julio Narvaez,"Smith, Moon and Brown",898-65-1043,349436901,julio.narvaez@email.com,Av. San Martin 2200,10/01/2022,Empresa,ambos
+CL-0049,Kelly Olivares,Castaneda-Arnold,887-72-3536,728761558,kelly.olivares@email.com,Av. Los Eucaliptos 600,09/07/2021,Natural,sms
+CL-0050,Leo Quijano,Sims Group,215-18-7932,(538)390-1715,leo.quijano@email.com,"Sector 3, Grupo 8",29/12/2024,Natural,sms
+CL-0051,Monica Ramos,"Jacobs, Williams and Lopez",178-42-2620,385.525.7738,monica.ramos@email.com,Av. Peru 200,05/12/2020,Natural,email
+CL-0052,Nico Salgado,"Calderon, Davis and Flores",643-16-1928,488-754-6414x1547,nico.salgado@email.com,Parque Industrial Mz D,02/04/2021,Empresa,email
+CL-0053,Olga Torres,"Swanson, Davis and Rodriguez",318-78-2667,862-345-1322x69039,olga.torres@email.com,Av. Tingo Maria 800,04/09/2022,Empresa,sms
+CL-0054,Pablo Urbina,"Flores, Cook and Russell",221-12-4733,-6877,pablo.urbina@email.com,Carretera Panamericana Sur Km 30,14/06/2025,Natural,ambos
+CL-0055,Quetcy Valdivia,Garcia LLC,645-05-8354,993-438-9671,quetcy.valdivia@email.com,Jr. Tarapaca 150,17/05/2021,Empresa,sms
+CL-0056,Renzo Wong,"Johnson, Alvarez and Case",840-48-2592,001-472-100-6640x040,renzo.wong@email.com,Av. Aviacion 2800,06/05/2023,Empresa,email
+CL-0057,Susana Xavier,"Brown, Bishop and Parker",059-05-4860,-8389,susana.xavier@email.com,Calle 1 Mz G Lt 12,13/02/2022,Natural,email
+CL-0058,Tito Yanez,"Taylor, Martinez and Bean",289-90-2008,5184683706,tito.yanez@email.com,Av. Comandante Espinar 600,19/06/2021,Natural,email
+CL-0059,Vanesa Zegarra,Andrews LLC,426-30-4961,558.908.6292x33738,vanesa.zegarra@email.com,Calle Los Cipreses 400,28/03/2023,Empresa,email
+CL-0060,Willy Acosta,Holmes-Bautista,736-35-0596,897-297-2010x14830,willy.acosta@email.com,Jr. Manuel Candamo 90,24/10/2025,Empresa,sms
+CL-0061,Yadira Blanco,Dunn Inc,720-83-3212,(896)089-3606x5531,yadira.blanco@email.com,Av. La Paz 1050,26/01/2023,Natural,sms
+CL-0062,Zacarias Castaneda,Mitchell and Sons,213-74-7745,(342)538-5631,zacarias.castaneda@email.com,Av. Costanera 500,19/07/2022,Natural,sms
+CL-0063,Adriana Davila,Johnson Inc,254-55-0753,001-213-520-7561x0414,adriana.davila@email.com,Av. Benavides 4000,30/09/2021,Natural,ambos
+CL-0064,Benjamin Espinoza,Howard LLC,088-44-0324,+1-334-659-2393x4512,benjamin.espinoza@email.com,Calle Jose Maria Plaza 100,12/09/2022,Natural,sms
+CL-0065,Claudia Fajardo,"Jackson, Walsh and Mcdaniel",200-57-1801,409.838.9035,claudia.fajardo@email.com,Malecon Grau 80,09/06/2024,Natural,email
+CL-0066,Daniel Guerra,Jackson-Lewis,407-29-8274,232-758-0705x0769,daniel.guerra@email.com,Av. Juan de Aliaga 100,25/07/2024,Empresa,ambos
+CL-0067,Eva Hernandez,Lester-Palmer,146-76-6974,438.517.1012x83683,eva.hernandez@email.com,Jr. Los Tulipanes 300,05/09/2022,Natural,email
+CL-0068,Felix Iturbe,"Johnson, Willis and Phillips",712-89-2085,564-882-9475x967,felix.iturbe@email.com,Av. Micaela Bastidas 50,19/07/2022,Natural,sms
+CL-0069,Gina Jara,"Fernandez, Adams and Ayala",319-85-7202,685.165.9771x10273,gina.jara@email.com,Av. Salaverry 2900,10/04/2023,Empresa,ambos
+CL-0070,Humberto Koc,Coleman Inc,545-17-3381,(627)239-9169x9794,humberto.koc@email.com,Calle Porta 170,01/04/2023,Empresa,ambos
+CL-0071,Ivana Linares,Mills and Sons,434-02-4423,+1-252-574-9012x68433,ivana.linares@email.com,Av. Carlos Izaguirre 90,24/07/2024,Empresa,email
+CL-0072,Jairo Mendez,Martinez PLC,282-32-9271,206-058-7831x26240,jairo.mendez@email.com,Av. El Pacifico 250,26/10/2021,Empresa,email
+CL-0073,Karina Navarro,"Parks, Long and Reeves",690-60-9035,(526)188-8407,karina.navarro@email.com,Av. Tupac Amaru Km 20,27/02/2024,Empresa,sms
+CL-0074,Leonel Orellana,Davis Group,375-03-5613,584.099.2679x6929,leonel.orellana@email.com,Jr. Los Duraznos 100,28/10/2022,Natural,email
+CL-0075,Marisol Pena,"Thomas, Monroe and Galloway",439-87-0352,362.969.1545x202,marisol.pena@email.com,Av. Revolucion 100,10/10/2025,Empresa,email
+CL-0076,Nestor Quispe,Hernandez Group,339-84-1627,342-750-2531x100,nestor.quispe@email.com,Av. Zarumilla 50,22/08/2021,Empresa,sms
+CL-0077,Olinda Rios,"Johnson, Blackburn and Palmer",726-24-3660,001-183-607-4922x63868,olinda.rios@email.com,Av. Cesar Vallejo 150,05/09/2021,Empresa,sms
+CL-0078,Piero Sanchez,Davis-Little,225-27-1895,293.985.7866x746,piero.sanchez@email.com,Jr. Carhuaz 450,06/12/2022,Empresa,ambos
+CL-0079,Quiteria Tafur,Baker Ltd,442-77-5424,312-026-3732,quiteria.tafur@email.com,Plaza de Armas S/N,23/03/2023,Natural,email
+CL-0080,Roberto Ubillus,Greene-Huffman,669-64-0764,(730)732-3757,roberto.ubillus@email.com,Jr. Trujillo 300,15/06/2022,Natural,ambos
+CL-0081,Sara Vargas,Rodriguez-Fisher,473-22-2445,001-951-936-3275x4979,sara.vargas@email.com,Av. Primavera 1000,15/12/2024,Natural,sms
+CL-0082,Tania Wong,Bauer and Sons,129-42-0644,001-482-085-1218x0459,tania.wong@email.com,Av. Villaran 700,22/12/2023,Natural,email
+CL-0083,Ulises Yabar,Lewis-Walker,417-97-6636,957.697.5852x3986,ulises.yabar@email.com,Calle Coronel Inclan 300,28/06/2021,Empresa,sms
+CL-0084,Viviana Zamora,"Krause, Wright and Lopez",583-06-2604,781-483-0412x120,viviana.zamora@email.com,Av. Raul Ferrero 1200,04/05/2024,Empresa,ambos
+CL-0085,Wilmer Alonzo,"Tate, Morales and Holden",356-97-2000,(851)562-2221,wilmer.alonzo@email.com,Av. Arenales 2000,16/01/2021,Natural,email
+CL-0086,Yovana Bellido,"Jones, Huff and Wood",750-77-2774,001-623-963-4765,yovana.bellido@email.com,Av. Sucre 800,19/08/2023,Empresa,email
+CL-0087,Zulema Caceres,"Robles, Davis and Williams",632-40-3915,229-453-4345,zulema.caceres@email.com,Av. Insurgentes 650,22/01/2021,Natural,ambos
+CL-0088,Angel Davila,Bradley-Hall,361-23-7052,-10802,angel.davila@email.com,Av. Morro Solar 1100,05/04/2024,Natural,sms
+CL-0089,Brenda Escobar,Kerr Group,128-02-9994,+1-384-951-5590x75950,brenda.escobar@email.com,Jr. Mariscal Luzuriaga 120,15/06/2021,Empresa,sms
+CL-0090,Camilo Flores,Holder-Wright,297-30-1945,2634997810,camilo.flores@email.com,Av. El Sol 400,13/10/2025,Empresa,ambos
+CL-0091,Dina Guevara,Freeman and Sons,164-30-3296,098-465-8566x1939,dina.guevara@email.com,Jr. Leoncio Prado 900,06/03/2025,Natural,email
+CL-0092,Edwin Hidalgo,Gonzalez LLC,569-49-5604,001-926-354-2115x546,edwin.hidalgo@email.com,Av. Gran Chimu 800,02/10/2025,Empresa,sms
+CL-0093,Fabiola Izquierdo,"Joseph, Warner and Hubbard",254-96-1922,001-828-746-5635,fabiola.izquierdo@email.com,Av. Puno 100,09/07/2022,Natural,sms
+CL-0094,German Jara,"Morgan, Hall and Daniels",818-21-3455,(495)593-9930x032,german.jara@email.com,Calle Choquehuanca 150,16/08/2024,Empresa,ambos
+CL-0095,Heidi Kollantes,"Johnston, Stephens and Carroll",516-82-4125,256-903-5233x424,heidi.kollantes@email.com,Av. Larco 700,11/07/2021,Empresa,ambos
+CL-0096,Ivan Leon,Hall-Farley,314-96-9227,-5696,ivan.leon@email.com,Av. Naranjal 550,30/10/2023,Empresa,sms
+CL-0097,Jazmin Moya,"Jones, Dixon and Brown",308-34-2579,992-950-8493,jazmin.moya@email.com,Av. Chinchaysuyo 1500,21/01/2022,Natural,sms
+CL-0098,Kevin Noriega,"White, Berry and Reyes",463-35-6743,(967)781-2290x83587,kevin.noriega@email.com,Jr. Los Girasoles 80,26/07/2022,Natural,sms
+CL-0099,Lourdes Ojeda,"Anderson, Williams and Shannon",208-07-3737,(344)095-0151x08426,lourdes.ojeda@email.com,Av. Huancaray 500,17/02/2025,Empresa,ambos
+CL-0100,Marcos Pacheco,Rice-Hill,096-88-0796,+1-916-050-2219x9822,marcos.pacheco@email.com,"Sector 6, Grupo 1",21/07/2023,Natural,sms
+CL-0101,Nicole Quispe,Stewart-Herrera,882-79-9936,093-422-6499x0163,nicole.quispe@email.com,Av. Honorio Delgado 400,25/06/2024,Empresa,email
+CL-0102,Omar Rojas,Martinez-Hall,308-85-4748,001-088-583-2695x81512,omar.rojas@email.com,Av. San Gabriel 700,29/09/2024,Natural,email
+CL-0103,Pamela Soto,Archer-Williams,825-04-7600,464-695-1968,pamela.soto@email.com,Jr. Iquique 50,20/10/2023,Empresa,email
+CL-0104,Quique Tello,Reese-Hernandez,195-10-9371,(989)287-9952x9181,quique.tello@email.com,Calle Los Pinos 10,30/09/2024,Empresa,email
+CL-0105,Raquel Ugarte,"Davis, Mccarty and George",269-31-7029,287.674.6928x755,raquel.ugarte@email.com,Jr. Loreto 450,15/04/2025,Empresa,ambos
+CL-0106,Saul Vasquez,Riley-Harris,277-16-3058,-1437,saul.vasquez@email.com,Av. Javier Prado Este 3000,24/02/2021,Natural,email
+CL-0107,Teresa Watanabe,Bridges-Collins,532-07-6436,+1-217-456-1208x28160,teresa.watanabe@email.com,Calle Los Negocios 200,12/12/2022,Empresa,ambos
+CL-0108,Ulises Xavier,Morgan-Johnson,478-13-5644,4717870265,ulises.xavier@email.com,Av. Ricardo Palma 900,30/08/2021,Natural,sms
+CL-0109,Victoria Yactayo,Wilson-Clayton,624-82-4968,(462)117-9836x0766,victoria.yactayo@email.com,Av. Del Parque 600,17/01/2022,Empresa,sms
+CL-0110,Walter Zarate,Davis Inc,305-62-9377,705.980.5711x547,walter.zarate@email.com,Jr. Manuel Gomez 115,25/02/2022,Natural,ambos
+CL-0111,Yolanda Alcala,Payne PLC,155-60-8068,971.220.8502x689,yolanda.alcala@email.com,Av. Paso de los Andes 700,21/10/2023,Natural,sms
+CL-0112,Zosimo Benitez,Brown-Vega,634-95-2974,(634)505-3103x55592,zosimo.benitez@email.com,Av. Riva Aguero 1200,23/09/2021,Natural,ambos
+CL-0113,Aldo Chacon,Savage-Schwartz,017-82-4863,976-123-8952x56041,aldo.chacon@email.com,Av. El Derby 350,03/01/2023,Empresa,ambos
+CL-0114,Belen Delgado,"Williams, Martinez and Tran",155-64-6807,866.482.9084x43094,belen.delgado@email.com,Jr. Huiracocha 250,27/03/2024,Natural,ambos
+CL-0115,Cristian Espinosa,Vaughn-Santos,609-89-0311,801.517.4631,cristian.espinosa@email.com,Av. Las Gaviotas 300,09/10/2025,Empresa,sms
+CL-0116,Doris Fernandez,Flores and Sons,571-40-9331,848-319-1817x939,doris.fernandez@email.com,Calle Roca de Vergallo 10,07/08/2022,Natural,email
+CL-0117,Elias Gutierrez,Sanchez Ltd,424-28-1587,+1-942-833-7527x426,elias.gutierrez@email.com,Av. Santa Rosa 1500,30/06/2025,Natural,sms
+CL-0118,Fatima Hernandez,"Mayer, Montgomery and Cook",026-32-9828,+1-389-314-6277x9166,fatima.hernandez@email.com,Av. Belaunde 950,02/12/2022,Empresa,email
+CL-0119,Gabriel Ibarra,"Knight, Miller and Lewis",176-62-5855,001-576-975-8881,gabriel.ibarra@email.com,Calle Dean Valdivia 10,13/10/2022,Empresa,ambos
+CL-0120,Hilda Jimenez,"Norton, Welch and Maldonado",782-49-3417,(014)547-7631x90761,hilda.jimenez@email.com,Av. Benavides 2000,09/10/2022,Empresa,sms
+CL-0121,Igor Koc,"Cervantes, English and Brown",215-47-2057,402-858-4629x724,igor.koc@email.com,Av. Antunez de Mayolo 100,28/12/2024,Natural,ambos
+CL-0122,Jazmin Lopez,Gonzalez Ltd,693-15-7798,772-367-5853,jazmin.lopez@email.com,Av. Carlos Wiesse 50,13/12/2024,Natural,sms
+CL-0123,Kenji Mendez,Valdez-Carter,459-08-5501,226.381.5277,kenji.mendez@email.com,Jr. Cuzco 100,19/01/2023,Empresa,email
+CL-0124,Liliana Narvaez,Williams Group,727-46-3011,+1-926-317-5830x8617,liliana.narvaez@email.com,Av. La Encalada 300,09/03/2022,Empresa,sms
+CL-0125,Moises Olivares,"White, Johnson and Dyer",466-06-5036,1131664855,moises.olivares@email.com,"Sector 4, Grupo 12",13/02/2024,Natural,ambos
+CL-0126,Noelia Paredes,Brown-Chapman,113-84-3978,+1-894-993-5022x83853,noelia.paredes@email.com,Av. Tomas Valle 150,11/05/2023,Natural,email
+CL-0127,Oliver Quijano,Rich-Robinson,054-30-0752,702-360-4122x370,oliver.quijano@email.com,Av. 26 de Noviembre 800,26/11/2023,Natural,ambos
+CL-0128,Paola Ramos,Barnes-Mccoy,263-64-3802,+1-181-618-4849x8593,paola.ramos@email.com,Jr. Mariano Cornejo 700,13/02/2025,Empresa,sms
+CL-0129,Quique Salazar,"Walker, Rowe and Gonzalez",459-26-4369,+1-835-193-1433x1547,quique.salazar@email.com,Av. San Pedro 50,26/06/2022,Empresa,sms
+CL-0130,Roxana Torres,"Mills, Navarro and King",367-13-1325,001-511-622-9594,roxana.torres@email.com,Jr. Huaraz 10,07/11/2021,Natural,email
+CL-0131,Sergio Urbina,"Hill, Miller and Scott",541-65-9768,001-056-064-4385x7862,sergio.urbina@email.com,Av. Fray Luis de Leon 30,22/08/2023,Natural,sms
+CL-0132,Tatiana Vidal,Thomas-Ellison,608-20-7363,277.153.6458,tatiana.vidal@email.com,Calle Junin 550,10/06/2022,Natural,ambos
+CL-0133,Uriel Wong,Garcia Inc,045-87-3895,249-936-6126x230,uriel.wong@email.com,Av. Pardo y Aliaga 10,07/05/2022,Natural,ambos
+CL-0134,Valentina Yanez,Fox-Allen,164-79-9381,001-826-870-8014,valentina.yanez@email.com,Jr. Las Dalias 200,10/07/2021,Empresa,sms
+CL-0135,Wilfredo Zarate,"Clark, Murray and Jimenez",838-13-4060,001-116-517-5440,wilfredo.zarate@email.com,Av. Petit Thouars 1500,21/07/2024,Natural,ambos
+CL-0136,Ximena Acosta,Peterson PLC,898-02-2038,001-516-556-6369,ximena.acosta@email.com,Jr. Mariano Odria 100,26/10/2021,Natural,sms
+CL-0137,Yago Benitez,"Valdez, Mercado and Rodriguez",265-99-7151,(860)718-0375x705,yago.benitez@email.com,Av. Los Patriotas 30,29/05/2021,Empresa,email
+CL-0138,Zulma Cabrera,"Jones, Brock and Hall",684-66-7757,225.071.0231x6198,zulma.cabrera@email.com,Calle Monte Grande 400,25/10/2022,Empresa,ambos
+CL-0139,Ariel Diaz,"Reeves, Rodgers and Robbins",691-90-9726,001-945-273-6223x0932,ariel.diaz@email.com,Jr. Talara 111,16/09/2021,Empresa,email
+CL-0140,Bianca Espinoza,Johnston Group,663-26-0392,(756)133-4564,bianca.espinoza@email.com,Av. Guardia Peruana 70,20/09/2022,Natural,ambos
+CL-0141,Camilo Flores,Benitez-Steele,614-16-0616,(909)531-1772x5958,camilo.flores@email.com,Av. Brasil 3000,24/10/2021,Natural,email
+CL-0142,Dayana Gomez,Martinez-Berg,735-26-9611,001-205-374-8869,dayana.gomez@email.com,Av. 13 de Enero 500,16/02/2021,Natural,sms
+CL-0143,Erick Herrera,"Walker, Bush and Jackson",159-77-8945,(282)955-7789x2562,erick.herrera@email.com,Av. Los Angeles 10,06/01/2023,Natural,sms
+CL-0144,Fabian Ibarra,Gonzalez Inc,755-06-0115,5081974491,fabian.ibarra@email.com,Calle Los Ficus 200,08/06/2023,Empresa,ambos
+CL-0145,Gladys Jimenez,Bennett Inc,701-35-1578,+1-882-923-5614x847,gladys.jimenez@email.com,Av. Angamos Oeste 1000,26/10/2021,Natural,ambos
+CL-0146,Hernan Koc,Duran Group,804-93-3744,(315)105-8520,hernan.koc@email.com,Av. Tomas Valle 900,21/01/2021,Natural,email
+CL-0147,Ines Lopez,"Melton, Butler and Shaffer",449-92-7117,623.311.0299,ines.lopez@email.com,Av. Metropolitana 50,27/12/2023,Natural,ambos
+CL-0148,Jorge Mendez,"Newman, Gordon and Nelson",532-33-4726,531-434-4595x78398,jorge.mendez@email.com,Jr. San Luis 300,02/12/2022,Natural,ambos
+CL-0149,Karen Narvaez,Mcgrath-Miles,628-37-4744,-8032,karen.narvaez@email.com,Av. Bolognesi 10,08/08/2021,Empresa,ambos
+CL-0150,Juan Quispe,Pruitt and Sons,215-71-4714,+1-621-990-2051x098,juan.quispe@email.com,"Sector 7, Grupo 4",08/03/2021,Empresa,sms

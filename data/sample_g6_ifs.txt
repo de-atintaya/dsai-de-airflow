@@ -1,8 +1,0 @@
-Airflow Grupo 6
-
-Adnner Esperilla
-Josue Sanchez
-Geraldine Quispe
-Hugo Villanueva
-Italo Flores
-
