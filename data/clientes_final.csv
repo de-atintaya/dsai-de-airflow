@@ -1,151 +1,151 @@
-id_cliente,nombre_cliente,razon_social,ruc_dni,telefono,correo,direccion,fecha_registro,tipo_cliente,preferencia_contacto
-CL-0001,Maria Flores,Richmond LLC,51907473,989702744,maria.flores@email.com,Av. Proceres de la Independencia 1234,20/04/2024,Natural,email
-CL-0002,Carlos Garcia,"Porter, Turner and Dominguez",2048349005,943526720,carlos.garcia@email.com,"Calle 18 Mz C Lt 5, Urb. El Retablo",17/04/2025,Empresa,ambos
-CL-0003,Ana Diaz,Williams-Valdez,2095688092,929433425,ana.diaz@email.com,"Calle Ocharan 400, Dpto 101",09/05/2021,Empresa,ambos
-CL-0004,Miguel Rojas,"Willis, Martin and Estes",2047264877,990816508,miguel.rojas@email.com,Jiron El Polo 1587,31/05/2021,Empresa,email
-CL-0005,Sofia Chavez,Hansen PLC,2023366224,971292996,sofia.chavez@email.com,Av. Javier Prado Este 2500,12/07/2021,Empresa,email
-CL-0006,Luis Huaman,Thomas LLC,2094098104,954249645,luis.huaman@email.com,Av. Alameda del Corregidor 890,27/04/2024,Empresa,email
-CL-0007,Camila Mendoza,"Elliott, Rodriguez and Turner",62452575,978280367,camila.mendoza@email.com,Av. Cuba 750,20/01/2023,Natural,ambos
-CL-0008,Jose Perez,Rose Group,57290937,969071717,jose.perez@email.com,Jr. Risso 333,17/05/2022,Natural,email
-CL-0009,Lucia Soto,"Richardson, Snyder and Simmons",16524859,999206201,lucia.soto@email.com,Av. Bolivar 905,31/07/2023,Natural,email
-CL-0010,Pedro Vargas,"Perez, Forbes and Cameron",2077099855,913951026,pedro.vargas@email.com,Jr. Saenz Pena 412,24/02/2023,Empresa,email
-CL-0011,Rosa Castillo,Carroll and Sons,79216562,917809886,rosa.castillo@email.com,Av. La Marina 2000,30/08/2025,Natural,ambos
-CL-0012,Javier Ramos,"Dominguez, Gomez and Guerra",20623893,958929131,javier.ramos@email.com,Av. Carretera Central Km 7.5,17/12/2023,Natural,ambos
-CL-0013,Valeria Torres,Romero LLC,2032772279,959571920,valeria.torres@email.com,Av. Huaylas 110,22/01/2021,Empresa,sms
-CL-0014,Diego Cardenas,Rodriguez-Thompson,2044823161,931502405,diego.cardenas@email.com,Calle San Martin 555,12/08/2025,Empresa,sms
-CL-0015,Elena Leon,Coleman-White,46081075,976908502,elena.leon@email.com,Av. Tupac Amaru 3450,23/03/2024,Natural,ambos
-CL-0016,Ricardo Nunez,"Blevins, Jenkins and Warren",18753497,990033431,ricardo.nunez@email.com,Jr. Aguarico 222,14/02/2023,Natural,ambos
-CL-0017,Patricia Luna,Roth Group,2032787364,914584953,patricia.luna@email.com,Av. Faucett 600,08/11/2021,Empresa,sms
-CL-0018,Alejandro Vega,Fernandez LLC,65481274,955576113,alejandro.vega@email.com,"Mz D Lt 10, Urb. Satelite",06/05/2024,Natural,sms
-CL-0019,Andrea Quiroz,Peck LLC,40710406,938469813,andrea.quiroz@email.com,Av. Principal 140,02/12/2025,Natural,ambos
-CL-0020,Fernando Sarmiento,Morgan PLC,2056829772,982919393,fernando.sarmiento@email.com,Jiron Ancash 200,25/05/2022,Empresa,ambos
-CL-0021,Gabriela Reyes,Leon-Buck,2089446625,975698758,gabriela.reyes@email.com,"Sector 2, Grupo 15, Mz B",03/05/2022,Empresa,email
-CL-0022,Hector Palacios,Phillips Group,58613549,926118489,hector.palacios@email.com,Av. Canta Callao 300,02/06/2021,Natural,ambos
-CL-0023,Isabel Ruiz,Howard-Malone,2042555292,984233451,isabel.ruiz@email.com,Av. Las Palmeras 1850,17/06/2022,Empresa,ambos
-CL-0024,Jorge Guerrero,Dean Group,2030157931,981530565,jorge.guerrero@email.com,Carretera Canta 100,04/03/2021,Empresa,ambos
-CL-0025,Karla Mora,Mason-Carney,2081768351,975817570,karla.mora@email.com,Sector Huertos de Manchay,05/03/2024,Empresa,sms
-CL-0026,Manuel Ochoa,Boone-Butler,48403944,946994291,manuel.ochoa@email.com,Av. Cultura 100,18/06/2025,Natural,ambos
-CL-0027,Natalia Paredes,"Evans, Davenport and Chaney",2030015198,927900861,natalia.paredes@email.com,Av. Salvador Allende 999,07/03/2021,Empresa,sms
-CL-0028,Oscar Zevallos,Frazier and Sons,2032610191,973708572,oscar.zevallos@email.com,Calle Los Sauces 45,15/11/2024,Empresa,email
-CL-0029,Veronica Vidal,"Velez, Spence and Lopez",71590550,997826345,veronica.vidal@email.com,Antigua Panamericana Sur Km 35,14/05/2022,Natural,sms
-CL-0030,Raul Valdez,Carter-Stewart,2057599036,993572128,raul.valdez@email.com,Av. Samuel Alcazar 600,11/12/2022,Empresa,email
-CL-0031,Silvia Cabrera,"Thompson, Anderson and Walsh",2032282408,991108859,silvia.cabrera@email.com,Av. San Borja Sur 500,03/11/2022,Empresa,email
-CL-0032,Tomas Herrera,Robinson PLC,44486107,959753618,tomas.herrera@email.com,Calle Los Halcones 88,09/12/2022,Natural,email
-CL-0033,Ursula Mejia,Cole Ltd,2035118298,972205690,ursula.mejia@email.com,Paseo de la Republica 3200,21/01/2024,Empresa,sms
-CL-0034,Victor Salazar,Hansen-Evans,71023693,992851993,victor.salazar@email.com,Jr. El Remanso 105,09/05/2023,Natural,sms
-CL-0035,Wendy Espinoza,"Rodriguez, Ayala and Caldwell",54295083,982930508,wendy.espinoza@email.com,Av. Pardo de Zela 1100,18/10/2022,Natural,ambos
-CL-0036,Ximena Acuna,"Moreno, Blanchard and Smith",18619481,968796672,ximena.acuna@email.com,Calle Julio C. Tello 400,04/07/2023,Natural,ambos
-CL-0037,Yair Bardales,Bush-Mcdaniel,2042631961,953542290,yair.bardales@email.com,Av. Elmer Faucett 100,20/12/2022,Empresa,email
-CL-0038,Zoila Correa,"Santos, Hunt and Harmon",2072945428,914018847,zoila.correa@email.com,Av. Caminos del Inca 1650,29/09/2024,Empresa,ambos
-CL-0039,Alberto Delgado,Reed-Smith,31982299,939331317,alberto.delgado@email.com,Av. San Felipe 1010,28/03/2023,Natural,sms
-CL-0040,Beatriz Echegaray,"Young, Clark and Newman",36243861,965976792,beatriz.echegaray@email.com,Alameda Sur 99,19/12/2021,Natural,sms
-CL-0041,Cesar Fernandez,"Mccoy, Patterson and Davenport",2036683703,932940381,cesar.fernandez@email.com,Jr. Comandante Espinar 300,24/10/2025,Empresa,sms
-CL-0042,Diana Gomez,"Smith, Ramirez and Ellison",68976473,937663020,diana.gomez@email.com,Av. Wiesse 500,12/12/2020,Natural,sms
-CL-0043,Ernesto Ibarra,Ellis-Simpson,35770903,926572222,ernesto.ibarra@email.com,Av. Universitaria Norte 700,02/08/2025,Natural,email
-CL-0044,Flor Jimenez,Page-Montoya,37025487,928476717,flor.jimenez@email.com,Calle Miguel Dasso 150,24/01/2022,Natural,sms
-CL-0045,Guillermo Kano,"Pope, Ramirez and Griffin",29057330,928687141,guillermo.kano@email.com,Av. Pardo 1300,09/02/2021,Natural,ambos
-CL-0046,Hugo Lopez,Carrillo-Richardson,32217295,957989263,hugo.lopez@email.com,Av. Angélica Gamarra 400,19/07/2023,Natural,email
-CL-0047,Irma Montoya,"Banks, Williams and Wright",26295902,952238606,irma.montoya@email.com,Calle Los Duraznos 50,14/01/2022,Natural,email
-CL-0048,Julio Narvaez,"Smith, Moon and Brown",2045467085,920137968,julio.narvaez@email.com,Av. San Martin 2200,10/01/2022,Empresa,ambos
-CL-0049,Kelly Olivares,Castaneda-Arnold,23201514,922605142,kelly.olivares@email.com,Av. Los Eucaliptos 600,09/07/2021,Natural,sms
-CL-0050,Leo Quijano,Sims Group,63069231,980728039,leo.quijano@email.com,"Sector 3, Grupo 8",29/12/2024,Natural,sms
-CL-0051,Monica Ramos,"Jacobs, Williams and Lopez",20233698,980405129,monica.ramos@email.com,Av. Peru 200,05/12/2020,Natural,email
-CL-0052,Nico Salgado,"Calderon, Davis and Flores",2072929931,949377403,nico.salgado@email.com,Parque Industrial Mz D,02/04/2021,Empresa,email
-CL-0053,Olga Torres,"Swanson, Davis and Rodriguez",2029068513,915539029,olga.torres@email.com,Av. Tingo Maria 800,04/09/2022,Empresa,sms
-CL-0054,Pablo Urbina,"Flores, Cook and Russell",12846292,947836793,pablo.urbina@email.com,Carretera Panamericana Sur Km 30,14/06/2025,Natural,ambos
-CL-0055,Quetcy Valdivia,Garcia LLC,2055285562,948551645,quetcy.valdivia@email.com,Jr. Tarapaca 150,17/05/2021,Empresa,sms
-CL-0056,Renzo Wong,"Johnson, Alvarez and Case",2034999403,979517044,renzo.wong@email.com,Av. Aviacion 2800,06/05/2023,Empresa,email
-CL-0057,Susana Xavier,"Brown, Bishop and Parker",23137529,941549008,susana.xavier@email.com,Calle 1 Mz G Lt 12,13/02/2022,Natural,email
-CL-0058,Tito Yanez,"Taylor, Martinez and Bean",37169404,975153804,tito.yanez@email.com,Av. Comandante Espinar 600,19/06/2021,Natural,email
-CL-0059,Vanesa Zegarra,Andrews LLC,2040038905,917785114,vanesa.zegarra@email.com,Calle Los Cipreses 400,28/03/2023,Empresa,email
-CL-0060,Willy Acosta,Holmes-Bautista,2084369967,973651786,willy.acosta@email.com,Jr. Manuel Candamo 90,24/10/2025,Empresa,sms
-CL-0061,Yadira Blanco,Dunn Inc,31708722,995766616,yadira.blanco@email.com,Av. La Paz 1050,26/01/2023,Natural,sms
-CL-0062,Zacarias Castaneda,Mitchell and Sons,50022589,986640977,zacarias.castaneda@email.com,Av. Costanera 500,19/07/2022,Natural,sms
-CL-0063,Adriana Davila,Johnson Inc,18092210,920050866,adriana.davila@email.com,Av. Benavides 4000,30/09/2021,Natural,ambos
-CL-0064,Benjamin Espinoza,Howard LLC,69791295,918608088,benjamin.espinoza@email.com,Calle José Maria Plaza 100,12/09/2022,Natural,sms
-CL-0065,Claudia Fajardo,"Jackson, Walsh and Mcdaniel",64807439,980225019,claudia.fajardo@email.com,Malecon Grau 80,09/06/2024,Natural,email
-CL-0066,Daniel Guerra,Jackson-Lewis,2076893319,986152602,daniel.guerra@email.com,Av. Juan de Aliaga 100,25/07/2024,Empresa,ambos
-CL-0067,Eva Hernandez,Lester-Palmer,13438893,986805555,eva.hernandez@email.com,Jr. Los Tulipanes 300,05/09/2022,Natural,email
-CL-0068,Felix Iturbe,"Johnson, Willis and Phillips",14514554,974804816,felix.iturbe@email.com,Av. Micaela Bastidas 50,19/07/2022,Natural,sms
-CL-0069,Gina Jara,"Fernandez, Adams and Ayala",2051011969,998923426,gina.jara@email.com,Av. Salaverry 2900,10/04/2023,Empresa,ambos
-CL-0070,Humberto Koc,Coleman Inc,2058719965,916945519,humberto.koc@email.com,Calle Porta 170,01/04/2023,Empresa,ambos
-CL-0071,Ivana Linares,Mills and Sons,2063696027,935979171,ivana.linares@email.com,Av. Carlos Izaguirre 90,24/07/2024,Empresa,email
-CL-0072,Jairo Mendez,Martinez PLC,2059800303,960462653,jairo.mendez@email.com,Av. El Pacifico 250,26/10/2021,Empresa,email
-CL-0073,Karina Navarro,"Parks, Long and Reeves",2065725398,986894249,karina.navarro@email.com,Av. Tupac Amaru Km 20,27/02/2024,Empresa,sms
-CL-0074,Leonel Orellana,Davis Group,36912218,932495790,leonel.orellana@email.com,Jr. Los Duraznos 100,28/10/2022,Natural,email
-CL-0075,Marisol Pena,"Thomas, Monroe and Galloway",2040284215,921339937,marisol.pena@email.com,Av. Revolucion 100,10/10/2025,Empresa,email
-CL-0076,Nestor Quispe,Hernandez Group,2025088883,946046174,nestor.quispe@email.com,Av. Zarumilla 50,22/08/2021,Empresa,sms
-CL-0077,Olinda Rios,"Johnson, Blackburn and Palmer",2091625556,951158380,olinda.rios@email.com,Av. César Vallejo 150,05/09/2021,Empresa,sms
-CL-0078,Piero Sanchez,Davis-Little,2056173100,930097091,piero.sanchez@email.com,Jr. Carhuaz 450,06/12/2022,Empresa,ambos
-CL-0079,Quiteria Tafur,Baker Ltd,57968997,968360215,quiteria.tafur@email.com,Plaza de Armas S/N,23/03/2023,Natural,email
-CL-0080,Roberto Ubillus,Greene-Huffman,67438350,982999867,roberto.ubillus@email.com,Jr. Trujillo 300,15/06/2022,Natural,ambos
-CL-0081,Sara Vargas,Rodriguez-Fisher,28275384,978526440,sara.vargas@email.com,Av. Primavera 1000,15/12/2024,Natural,sms
-CL-0082,Tania Wong,Bauer and Sons,35073761,939058539,tania.wong@email.com,Av. Villaran 700,22/12/2023,Natural,email
-CL-0083,Ulises Yabar,Lewis-Walker,2065779995,968196858,ulises.yabar@email.com,Calle Coronel Inclan 300,28/06/2021,Empresa,sms
-CL-0084,Viviana Zamora,"Krause, Wright and Lopez",2078874635,961761320,viviana.zamora@email.com,Av. Raul Ferrero 1200,04/05/2024,Empresa,ambos
-CL-0085,Wilmer Alonzo,"Tate, Morales and Holden",45509181,981488390,wilmer.alonzo@email.com,Av. Arenales 2000,16/01/2021,Natural,email
-CL-0086,Yovana Bellido,"Jones, Huff and Wood",2089243808,930592575,yovana.bellido@email.com,Av. Sucre 800,19/08/2023,Empresa,email
-CL-0087,Zulema Caceres,"Robles, Davis and Williams",54774179,948874291,zulema.caceres@email.com,Av. Insurgentes 650,22/01/2021,Natural,ambos
-CL-0088,Angel Davila,Bradley-Hall,53914136,917856086,angel.davila@email.com,Av. Morro Solar 1100,05/04/2024,Natural,sms
-CL-0089,Brenda Escobar,Kerr Group,2035008445,937481659,brenda.escobar@email.com,Jr. Mariscal Luzuriaga 120,15/06/2021,Empresa,sms
-CL-0090,Camilo Flores,Holder-Wright,2090652382,993911088,camilo.flores@email.com,Av. El Sol 400,13/10/2025,Empresa,ambos
-CL-0091,Dina Guevara,Freeman and Sons,72102107,944152672,dina.guevara@email.com,Jr. Leoncio Prado 900,06/03/2025,Natural,email
-CL-0092,Edwin Hidalgo,Gonzalez LLC,2033655636,980173830,edwin.hidalgo@email.com,Av. Gran Chimu 800,02/10/2025,Empresa,sms
-CL-0093,Fabiola Izquierdo,"Joseph, Warner and Hubbard",67806850,980393495,fabiola.izquierdo@email.com,Av. Puno 100,09/07/2022,Natural,sms
-CL-0094,German Jara,"Morgan, Hall and Daniels",2098284732,975251942,german.jara@email.com,Calle Choquehuanca 150,16/08/2024,Empresa,ambos
-CL-0095,Heidi Kollantes,"Johnston, Stephens and Carroll",2058321207,984382640,heidi.kollantes@email.com,Av. Larco 700,11/07/2021,Empresa,ambos
-CL-0096,Ivan Leon,Hall-Farley,2048161825,959125298,ivan.leon@email.com,Av. Naranjal 550,30/10/2023,Empresa,sms
-CL-0097,Jazmin Moya,"Jones, Dixon and Brown",48670816,918099893,jazmin.moya@email.com,Av. Chinchaysuyo 1500,21/01/2022,Natural,sms
-CL-0098,Kevin Noriega,"White, Berry and Reyes",23138047,962434504,kevin.noriega@email.com,Jr. Los Girasoles 80,26/07/2022,Natural,sms
-CL-0099,Lourdes Ojeda,"Anderson, Williams and Shannon",2028782526,967289541,lourdes.ojeda@email.com,Av. Huancaray 500,17/02/2025,Empresa,ambos
-CL-0100,Marcos Pacheco,Rice-Hill,39480229,918754589,marcos.pacheco@email.com,"Sector 6, Grupo 1",21/07/2023,Natural,sms
-CL-0101,Nicole Quispe,Stewart-Herrera,2080253527,918202291,nicole.quispe@email.com,Av. Honorio Delgado 400,25/06/2024,Empresa,email
-CL-0102,Omar Rojas,Martinez-Hall,33045899,962112447,omar.rojas@email.com,Av. San Gabriel 700,29/09/2024,Natural,email
-CL-0103,Pamela Soto,Archer-Williams,2036261437,945675001,pamela.soto@email.com,Jr. Iquique 50,20/10/2023,Empresa,email
-CL-0104,Quique Tello,Reese-Hernandez,2062327296,989981789,quique.tello@email.com,Calle Los Pinos 10,30/09/2024,Empresa,email
-CL-0105,Raquel Ugarte,"Davis, Mccarty and George",2064713752,983117671,raquel.ugarte@email.com,Jr. Loreto 450,15/04/2025,Empresa,ambos
-CL-0106,Saul Vasquez,Riley-Harris,44295140,982089872,saul.vasquez@email.com,Av. Javier Prado Este 3000,24/02/2021,Natural,email
-CL-0107,Teresa Watanabe,Bridges-Collins,2068819300,971817175,teresa.watanabe@email.com,Calle Los Negocios 200,12/12/2022,Empresa,ambos
-CL-0108,Ulises Xavier,Morgan-Johnson,14605119,967406578,ulises.xavier@email.com,Av. Ricardo Palma 900,30/08/2021,Natural,sms
-CL-0109,Victoria Yactayo,Wilson-Clayton,2065191097,955005784,victoria.yactayo@email.com,Av. Del Parque 600,17/01/2022,Empresa,sms
-CL-0110,Walter Zarate,Davis Inc,71525263,924470472,walter.zarate@email.com,Jr. Manuel Gomez 115,25/02/2022,Natural,ambos
-CL-0111,Yolanda Alcala,Payne PLC,73581359,951448662,yolanda.alcala@email.com,Av. Paso de los Andes 700,21/10/2023,Natural,sms
-CL-0112,Zosimo Benitez,Brown-Vega,74770664,916751709,zosimo.benitez@email.com,Av. Riva Agüero 1200,23/09/2021,Natural,ambos
-CL-0113,Aldo Chacon,Savage-Schwartz,2075574042,978141210,aldo.chacon@email.com,Av. El Derby 350,03/01/2023,Empresa,ambos
-CL-0114,Belen Delgado,"Williams, Martinez and Tran",40250879,926787769,belen.delgado@email.com,Jr. Huiracocha 250,27/03/2024,Natural,ambos
-CL-0115,Cristian Espinosa,Vaughn-Santos,2066935484,987127515,cristian.espinosa@email.com,Av. Las Gaviotas 300,09/10/2025,Empresa,sms
-CL-0116,Doris Fernandez,Flores and Sons,21545392,936815995,doris.fernandez@email.com,Calle Roca de Vergallo 10,07/08/2022,Natural,email
-CL-0117,Elias Gutierrez,Sanchez Ltd,29335863,960369037,elias.gutierrez@email.com,Av. Santa Rosa 1500,30/06/2025,Natural,sms
-CL-0118,Fatima Hernandez,"Mayer, Montgomery and Cook",2076542874,976329277,fatima.hernandez@email.com,Av. Belaunde 950,02/12/2022,Empresa,email
-CL-0119,Gabriel Ibarra,"Knight, Miller and Lewis",2091778671,913051764,gabriel.ibarra@email.com,Calle Dean Valdivia 10,13/10/2022,Empresa,ambos
-CL-0120,Hilda Jimenez,"Norton, Welch and Maldonado",2053031771,998091103,hilda.jimenez@email.com,Av. Benavides 2000,09/10/2022,Empresa,sms
-CL-0121,Igor Koc,"Cervantes, English and Brown",41544263,937723914,igor.koc@email.com,Av. Antunez de Mayolo 100,28/12/2024,Natural,ambos
-CL-0122,Jazmin Lopez,Gonzalez Ltd,22128989,962447752,jazmin.lopez@email.com,Av. Carlos Wiesse 50,13/12/2024,Natural,sms
-CL-0123,Kenji Mendez,Valdez-Carter,2091318752,966325043,kenji.mendez@email.com,Jr. Cuzco 100,19/01/2023,Empresa,email
-CL-0124,Liliana Narvaez,Williams Group,2023492698,999419788,liliana.narvaez@email.com,Av. La Encalada 300,09/03/2022,Empresa,sms
-CL-0125,Moises Olivares,"White, Johnson and Dyer",41659833,943411617,moises.olivares@email.com,"Sector 4, Grupo 12",13/02/2024,Natural,ambos
-CL-0126,Noelia Paredes,Brown-Chapman,79564411,965162208,noelia.paredes@email.com,Av. Tomas Valle 150,11/05/2023,Natural,email
-CL-0127,Oliver Quijano,Rich-Robinson,73356485,938383888,oliver.quijano@email.com,Av. 26 de Noviembre 800,26/11/2023,Natural,ambos
-CL-0128,Paola Ramos,Barnes-Mccoy,2094087625,959843531,paola.ramos@email.com,Jr. Mariano Cornejo 700,13/02/2025,Empresa,sms
-CL-0129,Quique Salazar,"Walker, Rowe and Gonzalez",2068811241,968200730,quique.salazar@email.com,Av. San Pedro 50,26/06/2022,Empresa,sms
-CL-0130,Roxana Torres,"Mills, Navarro and King",38512342,922188599,roxana.torres@email.com,Jr. Huaraz 10,07/11/2021,Natural,email
-CL-0131,Sergio Urbina,"Hill, Miller and Scott",71070063,945698893,sergio.urbina@email.com,Av. Fray Luis de Leon 30,22/08/2023,Natural,sms
-CL-0132,Tatiana Vidal,Thomas-Ellison,75286945,931116099,tatiana.vidal@email.com,Calle Junin 550,10/06/2022,Natural,ambos
-CL-0133,Uriel Wong,Garcia Inc,22806420,936679778,uriel.wong@email.com,Av. Pardo y Aliaga 10,07/05/2022,Natural,ambos
-CL-0134,Valentina Yanez,Fox-Allen,2048977525,975176137,valentina.yanez@email.com,Jr. Las Dalias 200,10/07/2021,Empresa,sms
-CL-0135,Wilfredo Zarate,"Clark, Murray and Jimenez",40922903,924958825,wilfredo.zarate@email.com,Av. Petit Thouars 1500,21/07/2024,Natural,ambos
-CL-0136,Ximena Acosta,Peterson PLC,47361428,987081424,ximena.acosta@email.com,Jr. Mariano Odria 100,26/10/2021,Natural,sms
-CL-0137,Yago Benitez,"Valdez, Mercado and Rodriguez",2049059159,915550060,yago.benitez@email.com,Av. Los Patriotas 30,29/05/2021,Empresa,email
-CL-0138,Zulma Cabrera,"Jones, Brock and Hall",2085841070,919767511,zulma.cabrera@email.com,Calle Monte Grande 400,25/10/2022,Empresa,ambos
-CL-0139,Ariel Diaz,"Reeves, Rodgers and Robbins",2073395168,931998159,ariel.diaz@email.com,Jr. Talara 111,16/09/2021,Empresa,email
-CL-0140,Bianca Espinoza,Johnston Group,69908907,922759339,bianca.espinoza@email.com,Av. Guardia Peruana 70,20/09/2022,Natural,ambos
-CL-0141,Camilo Flores,Benitez-Steele,23506409,965424687,camilo.flores@email.com,Av. Brasil 3000,24/10/2021,Natural,email
-CL-0142,Dayana Gomez,Martinez-Berg,49022079,999066638,dayana.gomez@email.com,Av. 13 de Enero 500,16/02/2021,Natural,sms
-CL-0143,Erick Herrera,"Walker, Bush and Jackson",16582320,999784790,erick.herrera@email.com,Av. Los Angeles 10,06/01/2023,Natural,sms
-CL-0144,Fabian Ibarra,Gonzalez Inc,2044304290,930656583,fabian.ibarra@email.com,Calle Los Ficus 200,08/06/2023,Empresa,ambos
-CL-0145,Gladys Jimenez,Bennett Inc,55053207,944386933,gladys.jimenez@email.com,Av. Angamos Oeste 1000,26/10/2021,Natural,ambos
-CL-0146,Hernan Koc,Duran Group,29202906,984777982,hernan.koc@email.com,Av. Tomas Valle 900,21/01/2021,Natural,email
-CL-0147,Ines Lopez,"Melton, Butler and Shaffer",34370509,984943802,ines.lopez@email.com,Av. Metropolitana 50,27/12/2023,Natural,ambos
-CL-0148,Jorge Mendez,"Newman, Gordon and Nelson",31424196,938189321,jorge.mendez@email.com,Jr. San Luis 300,02/12/2022,Natural,ambos
-CL-0149,Karen Narvaez,Mcgrath-Miles,2088515241,989876176,karen.narvaez@email.com,Av. Bolognesi 10,08/08/2021,Empresa,ambos
-CL-0150,Juan Quispe,Pruitt and Sons,2033402556,924937104,juan.quispe@email.com,"Sector 7, Grupo 4",08/03/2021,Empresa,sms
+id_cliente,nombre_cliente,razon_social,tipo,ruc_dni,telefono,correo,direccion,distrito,fecha_registro,tipo_cliente,preferencia_contacto
+CL-0001,Maria Flores,Clinica Peruana de la Costa,PRIVADO,1049786986,989702744,maria.flores@email.com,Av. Proceres de la Independencia 1234,San Juan de Lurigancho,20/04/2024,Natural,email
+CL-0002,Carlos Garcia,Laboratorio Clinico Andino,PRIVADO,2048349005,943526720,carlos.garcia@email.com,"Calle 18 Mz C Lt 5, Urb. El Retablo", Ate,17/04/2025,Empresa,ambos
+CL-0003,Ana Diaz,Servicios Medicos Lima Norte,PUBLICO,2095688092,929433425,ana.diaz@email.com,"Calle Ocharan 400, Dpto 101", Ate,09/05/2021,Empresa,ambos
+CL-0004,Miguel Rojas,Farmacia Central del Surco,PRIVADO,2047264877,990816508,miguel.rojas@email.com,Jiron El Polo 1587,Santiago de Surco,31/05/2021,Empresa,email
+CL-0005,Sofia Chavez,Centro de Rehabilitacion El Sol,PUBLICO,2023366224,971292996,sofia.chavez@email.com,Av. Javier Prado Este 2500,San Isidro,12/07/2021,Empresa,email
+CL-0006,Luis Huaman,Medicina Ocupacional Total Peru,PUBLICO,2094098104,954249645,luis.huaman@email.com,Av. Alameda del Corregidor 890,La Molina,27/04/2024,Empresa,email
+CL-0007,Camila Mendoza,Consultorio Odontologico San Miguel,PRIVADO,1022352584,978280367,camila.mendoza@email.com,Av. Cuba 750,Jesus Maria,20/01/2023,Natural,ambos
+CL-0008,Jose Perez,Red de Ambulancias Lima Sur,PRIVADO,1070536404,969071717,jose.perez@email.com,Jr. Risso 333,Lince,17/05/2022,Natural,email
+CL-0009,Lucia Soto,Clinica Oftalmologica Miraflores,PRIVADO,1016677824,999206201,lucia.soto@email.com,Av. Bolivar 905,Pueblo Libre,31/07/2023,Natural,email
+CL-0010,Pedro Vargas,Laboratorios BioVida Rimac,PRIVADO,2077099855,913951026,pedro.vargas@email.com,Jr. Saenz Pena 412,Magdalena del Mar,24/02/2023,Empresa,email
+CL-0011,Rosa Castillo,Servicios de Terapia Fisica Norte,PRIVADO,1040992116,917809886,rosa.castillo@email.com,Av. La Marina 2000,San Miguel,30/08/2025,Natural,ambos
+CL-0012,Javier Ramos,Farmacia La Esquina Saludable,PRIVADO,1081064233,958929131,javier.ramos@email.com,Av. Carretera Central Km 7.5,Ate Vitarte,17/12/2023,Natural,ambos
+CL-0013,Valeria Torres,Medicina Estetica & Spa Lima,PUBLICO,2032772279,959571920,valeria.torres@email.com,Av. Huaylas 110,Chorrillos,22/01/2021,Empresa,sms
+CL-0014,Diego Cardenas,Centro de Salud Mental Equilibrio,PRIVADO,2044823161,931502405,diego.cardenas@email.com,Calle San Martin 555,Barranco,12/08/2025,Empresa,sms
+CL-0015,Elena Leon,Diagnostico por Imagen Avanzado,PRIVADO,1032784622,976908502,elena.leon@email.com,Av. Tupac Amaru 3450,Independencia,23/03/2024,Natural,ambos
+CL-0016,Ricardo Nunez,Laboratorio de Analisis Clinicos San Blas,PRIVADO,1034421588,990033431,ricardo.nunez@email.com,Jr. Aguarico 222,Brena,14/02/2023,Natural,ambos
+CL-0017,Patricia Luna,Unidad de Pediatria Integral,PUBLICO,2032787364,914584953,patricia.luna@email.com,Av. Faucett 600,Callao,08/11/2021,Empresa,sms
+CL-0018,Alejandro Vega,Farmacia Economica del Pueblo,PRIVADO,1068336574,955576113,alejandro.vega@email.com,"Mz D Lt 10, Urb. Satelite", San Borja,06/05/2024,Natural,sms
+CL-0019,Andrea Quiroz,Clinica Geriatrica Amor y Vida,PRIVADO,1027646194,938469813,andrea.quiroz@email.com,Av. Principal 140,Surquillo,02/12/2025,Natural,ambos
+CL-0020,Fernando Sarmiento,Servicios Quirurgicos Especializados,PRIVADO,2056829772,982919393,fernando.sarmiento@email.com,Jiron Ancash 200,El Agustino - Cercado de Lima,25/05/2022,Empresa,ambos
+CL-0021,Gabriela Reyes,Laboratorios de Toxicologia Peru,PRIVADO,2089446625,975698758,gabriela.reyes@email.com,"Sector 2, Grupo 15, Mz B", Carabayllo,03/05/2022,Empresa,email
+CL-0022,Hector Palacios,Clinica de la Mujer y Fertilidad,PRIVADO,1020178489,926118489,hector.palacios@email.com,Av. Canta Callao 300,San Martin de Porres,02/06/2021,Natural,ambos
+CL-0023,Isabel Ruiz,Centro Podologico Avanzado,PRIVADO,2042555292,984233451,isabel.ruiz@email.com,Av. Las Palmeras 1850,Los Olivos,17/06/2022,Empresa,ambos
+CL-0024,Jorge Guerrero,Farmacia Global Medicamentos,PUBLICO,2030157931,981530565,jorge.guerrero@email.com,Carretera Canta 100,Carabayllo,04/03/2021,Empresa,ambos
+CL-0025,Karla Mora,Medicina Deportiva y Traumatologia,PRIVADO,2081768351,975817570,karla.mora@email.com,Sector Huertos de Manchay,Pachacamac - Cieneguilla,05/03/2024,Empresa,sms
+CL-0026,Manuel Ochoa,Laboratorio de Patologia Molecular,PRIVADO,1027403257,946994291,manuel.ochoa@email.com,Av. Cultura 100,Santa Anita,18/06/2025,Natural,ambos
+CL-0027,Natalia Paredes,Clinica Dental Sonrisa Brillante,PUBLICO,2030015198,927900861,natalia.paredes@email.com,Av. Salvador Allende 999,Villa Maria del Triunfo,07/03/2021,Empresa,sms
+CL-0028,Oscar Zevallos,Servicios de Hemodialisis Lima Este,PUBLICO,2032610191,973708572,oscar.zevallos@email.com,Calle Los Sauces 45,Ate Vitarte - La Molina,15/11/2024,Empresa,email
+CL-0029,Veronica Vidal,Farmacia La Salud Siempre,PRIVADO,1082721466,997826345,veronica.vidal@email.com,Antigua Panamericana Sur Km 35,Lurin,14/05/2022,Natural,sms
+CL-0030,Raul Valdez,Centro de Fisioterapia y Dolor,PRIVADO,2057599036,993572128,raul.valdez@email.com,Av. Samuel Alcazar 600,Rimac,11/12/2022,Empresa,email
+CL-0031,Silvia Cabrera,Medicina Forense y Peritaje Medico,PUBLICO,2032282408,991108859,silvia.cabrera@email.com,Av. San Borja Sur 500,San Borja,03/11/2022,Empresa,email
+CL-0032,Tomas Herrera,Clinica del Ojo Vision Clara,PRIVADO,1072434797,959753618,tomas.herrera@email.com,Calle Los Halcones 88,Surquillo,09/12/2022,Natural,email
+CL-0033,Ursula Mejia,Laboratorio de Genetica Humana,PRIVADO,2035118298,972205690,ursula.mejia@email.com,Paseo de la Republica 3200,Miraflores - San Isidro,21/01/2024,Empresa,sms
+CL-0034,Victor Salazar,Farmacia 24 Horas Lince,PRIVADO,1029911882,992851993,victor.salazar@email.com,Jr. El Remanso 105,La Molina,09/05/2023,Natural,sms
+CL-0035,Wendy Espinoza,Servicios de Nutricion Integral,PRIVADO,1051797327,982930508,wendy.espinoza@email.com,Av. Pardo de Zela 1100,Lince,18/10/2022,Natural,ambos
+CL-0036,Ximena Acuna,Clinica del Corazon y Vasos,PRIVADO,1052255463,968796672,ximena.acuna@email.com,Calle Julio C. Tello 400,Pueblo Libre,04/07/2023,Natural,ambos
+CL-0037,Yair Bardales,Laboratorios de Inmunologia Aplicada,PRIVADO,2042631961,953542290,yair.bardales@email.com,Av. Elmer Faucett 100,San Miguel - Callao,20/12/2022,Empresa,email
+CL-0038,Zoila Correa,Centro Medico Preventivo San Borja,PUBLICO,2072945428,914018847,zoila.correa@email.com,Av. Caminos del Inca 1650,Santiago de Surco,29/09/2024,Empresa,ambos
+CL-0039,Alberto Delgado,Farmacia La Botica del Ahorro,PRIVADO,1020146845,939331317,alberto.delgado@email.com,Av. San Felipe 1010,Jesus Maria,28/03/2023,Natural,sms
+CL-0040,Beatriz Echegaray,Servicios de Hospitalizacion Domiciliaria,PRIVADO,1031976725,965976792,beatriz.echegaray@email.com,Alameda Sur 99,Chorrillos,19/12/2021,Natural,sms
+CL-0041,Cesar Fernandez,Clinica de Gastroenterologia Avanzada,PRIVADO,2036683703,932940381,cesar.fernandez@email.com,Jr. Comandante Espinar 300,Magdalena del Mar,24/10/2025,Empresa,sms
+CL-0042,Diana Gomez,Laboratorios de Microbiologia y Cultivos,PRIVADO,1042063052,937663020,diana.gomez@email.com,Av. Wiesse 500,San Juan de Lurigancho,12/12/2020,Natural,sms
+CL-0043,Ernesto Ibarra,Farmacia Las Flores de Lima,PRIVADO,1022347501,926572222,ernesto.ibarra@email.com,Av. Universitaria Norte 700,Comas,02/08/2025,Natural,email
+CL-0044,Flor Jimenez,Medicina de Alta Especialidad S.A.,PRIVADO,1095322156,928476717,flor.jimenez@email.com,Calle Miguel Dasso 150,San Isidro,24/01/2022,Natural,sms
+CL-0045,Guillermo Kano,Centro de Urologia Integral,PRIVADO,1034591321,928687141,guillermo.kano@email.com,Av. Pardo 1300,Miraflores,09/02/2021,Natural,ambos
+CL-0046,Hugo Lopez,Clinica de la Piel y Estetica S.A.,PRIVADO,1059603498,957989263,hugo.lopez@email.com,Av. Angelica Gamarra 400,Los Olivos,19/07/2023,Natural,email
+CL-0047,Irma Montoya,Laboratorios de Hematologia Total,PRIVADO,1088184278,952238606,irma.montoya@email.com,Calle Los Duraznos 50,Independencia,14/01/2022,Natural,email
+CL-0048,Julio Narvaez,Farmacia San Pedro Apostol,PRIVADO,2045467085,920137968,julio.narvaez@email.com,Av. San Martin 2200,Carabayllo,10/01/2022,Empresa,ambos
+CL-0049,Kelly Olivares,Servicios de Radiologia Digital,PRIVADO,1052966864,922605142,kelly.olivares@email.com,Av. Los Eucaliptos 600,Santa Anita,09/07/2021,Natural,sms
+CL-0050,Leo Quijano,Clinica Oftalmologica Lima Central,PRIVADO,1098356036,980728039,leo.quijano@email.com,"Sector 3, Grupo 8", San Miguel,29/12/2024,Natural,sms
+CL-0051,Monica Ramos,Laboratorios Clinicos del Pacifico,PRIVADO,1056465012,980405129,monica.ramos@email.com,Av. Peru 200,San Martin de Porres,05/12/2020,Natural,email
+CL-0052,Nico Salgado,Farmacia El Buen Remedio,PUBLICO,2072929931,949377403,nico.salgado@email.com,Parque Industrial Mz D,Villa Maria del Triunfo,02/04/2021,Empresa,email
+CL-0053,Olga Torres,Centro de Cirugia Ambulatoria Lince,PUBLICO,2029068513,915539029,olga.torres@email.com,Av. Tingo Maria 800,Brena,04/09/2022,Empresa,sms
+CL-0054,Pablo Urbina,Medicina Alternativa Holistica,PRIVADO,1042932590,947836793,pablo.urbina@email.com,Carretera Panamericana Sur Km 30,Lurin,14/06/2025,Natural,ambos
+CL-0055,Quetcy Valdivia,Clinica de Medicina Fisica y Rehab.,PRIVADO,2055285562,948551645,quetcy.valdivia@email.com,Jr. Tarapaca 150,Rimac,17/05/2021,Empresa,sms
+CL-0056,Renzo Wong,Laboratorios Bioquimicos Avanzados,PUBLICO,2034999403,979517044,renzo.wong@email.com,Av. Aviacion 2800,San Borja,06/05/2023,Empresa,email
+CL-0057,Susana Xavier,Farmacia Del Sol San Borja,PRIVADO,1041945238,941549008,susana.xavier@email.com,Calle 1 Mz G Lt 12,Surquillo,13/02/2022,Natural,email
+CL-0058,Tito Yanez,Servicios de Terapia de Lenguaje,PRIVADO,1061735842,975153804,tito.yanez@email.com,Av. Comandante Espinar 600,Miraflores,19/06/2021,Natural,email
+CL-0059,Vanesa Zegarra,Centro Medico de Check Ups,PRIVADO,2040038905,917785114,vanesa.zegarra@email.com,Calle Los Cipreses 400,La Molina,28/03/2023,Empresa,email
+CL-0060,Willy Acosta,Clinica de Fertilidad Sur,PRIVADO,2084369967,973651786,willy.acosta@email.com,Jr. Manuel Candamo 90,Lince,24/10/2025,Empresa,sms
+CL-0061,Yadira Blanco,Laboratorios de Hormonas y Enzimas,PRIVADO,1076386233,995766616,yadira.blanco@email.com,Av. La Paz 1050,Pueblo Libre,26/01/2023,Natural,sms
+CL-0062,Zacarias Castaneda,Farmacia La Confianza,PRIVADO,1087387813,986640977,zacarias.castaneda@email.com,Av. Costanera 500,San Miguel,19/07/2022,Natural,sms
+CL-0063,Adriana Davila,Servicios Medicos de Emergencia 24H,PRIVADO,1032517868,920050866,adriana.davila@email.com,Av. Benavides 4000,Santiago de Surco,30/09/2021,Natural,ambos
+CL-0064,Benjamin Espinoza,Clinica Pediatrica La Victoria,PRIVADO,1075356527,918608088,benjamin.espinoza@email.com,Calle Jose Maria Plaza 100,Jesus Maria,12/09/2022,Natural,sms
+CL-0065,Claudia Fajardo,Laboratorios de Investigacion Clinica,PRIVADO,1072538880,980225019,claudia.fajardo@email.com,Malecon Grau 80,Chorrillos,09/06/2024,Natural,email
+CL-0066,Daniel Guerra,Farmacia La Salud Siempre,PRIVADO,2076893319,986152602,daniel.guerra@email.com,Av. Juan de Aliaga 100,Magdalena del Mar,25/07/2024,Empresa,ambos
+CL-0067,Eva Hernandez,Servicios de Enfermeria Domiciliaria,PRIVADO,1031524598,986805555,eva.hernandez@email.com,Jr. Los Tulipanes 300,San Juan de Lurigancho,05/09/2022,Natural,email
+CL-0068,Felix Iturbe,Clinica de Otorrinolaringologia,PRIVADO,1084528201,974804816,felix.iturbe@email.com,Av. Micaela Bastidas 50,Comas,19/07/2022,Natural,sms
+CL-0069,Gina Jara,Laboratorios de Inmunodeficiencia,PRIVADO,2051011969,998923426,gina.jara@email.com,Av. Salaverry 2900,San Isidro - Jesus Maria,10/04/2023,Empresa,ambos
+CL-0070,Humberto Koc,Farmacia La Fe de Lima,PRIVADO,2058719965,916945519,humberto.koc@email.com,Calle Porta 170,Miraflores,01/04/2023,Empresa,ambos
+CL-0071,Ivana Linares,Centro de Nutricion Deportiva,PRIVADO,2063696027,935979171,ivana.linares@email.com,Av. Carlos Izaguirre 90,Los Olivos,24/07/2024,Empresa,email
+CL-0072,Jairo Mendez,Clinica de Obesidad y Metabolismo,PRIVADO,2059800303,960462653,jairo.mendez@email.com,Av. El Pacifico 250,Independencia,26/10/2021,Empresa,email
+CL-0073,Karina Navarro,Servicios de Geriatria Integral,PUBLICO,2065725398,986894249,karina.navarro@email.com,Av. Tupac Amaru Km 20,Carabayllo,27/02/2024,Empresa,sms
+CL-0074,Leonel Orellana,Laboratorios de Pruebas Rapidas,PRIVADO,1057656467,932495790,leonel.orellana@email.com,Jr. Los Duraznos 100,Santa Anita,28/10/2022,Natural,email
+CL-0075,Marisol Pena,Farmacia Ahorro y Salud Este,PRIVADO,2040284215,921339937,marisol.pena@email.com,Av. Revolucion 100,Villa El Salvador,10/10/2025,Empresa,email
+CL-0076,Nestor Quispe,Medicina Preventiva Empresarial,PUBLICO,2025088883,946046174,nestor.quispe@email.com,Av. Zarumilla 50,San Martin de Porres,22/08/2021,Empresa,sms
+CL-0077,Olinda Rios,Clinica Oftalmologica Peruana,PUBLICO,2091625556,951158380,olinda.rios@email.com,Av. Cesar Vallejo 150,Villa Maria del Triunfo,05/09/2021,Empresa,sms
+CL-0078,Piero Sanchez,Laboratorios Bioquimicos San Roque,PRIVADO,2056173100,930097091,piero.sanchez@email.com,Jr. Carhuaz 450,Brena,06/12/2022,Empresa,ambos
+CL-0079,Quiteria Tafur,Farmacia La Casona de Jesus Maria,PRIVADO,1014579329,968360215,quiteria.tafur@email.com,Plaza de Armas S/N,Lurin - Cercado de Lima,23/03/2023,Natural,email
+CL-0080,Roberto Ubillus,Servicios Medicos Domiciliarios Premium,PRIVADO,1017931680,982999867,roberto.ubillus@email.com,Jr. Trujillo 300,Rimac,15/06/2022,Natural,ambos
+CL-0081,Sara Vargas,Clinica de Cirugia Plastica Estetica,PRIVADO,1095382305,978526440,sara.vargas@email.com,Av. Primavera 1000,San Borja,15/12/2024,Natural,sms
+CL-0082,Tania Wong,Laboratorio de Biologia Molecular Sur,PRIVADO,1039650907,939058539,tania.wong@email.com,Av. Villaran 700,Surquillo,22/12/2023,Natural,email
+CL-0083,Ulises Yabar,Farmacia Popular San Juan,PUBLICO,2065779995,968196858,ulises.yabar@email.com,Calle Coronel Inclan 300,Miraflores,28/06/2021,Empresa,sms
+CL-0084,Viviana Zamora,Centro de Salud Ocupacional Delta,PRIVADO,2078874635,961761320,viviana.zamora@email.com,Av. Raul Ferrero 1200,La Molina,04/05/2024,Empresa,ambos
+CL-0085,Wilmer Alonzo,Medicina del Viajero y Vacunas,PRIVADO,1017231630,981488390,wilmer.alonzo@email.com,Av. Arenales 2000,Lince,16/01/2021,Natural,email
+CL-0086,Yovana Bellido,Clinica de Medicina Alternativa,PRIVADO,2089243808,930592575,yovana.bellido@email.com,Av. Sucre 800,Pueblo Libre,19/08/2023,Empresa,email
+CL-0087,Zulema Caceres,Laboratorios de Control de Calidad,PRIVADO,1098208071,948874291,zulema.caceres@email.com,Av. Insurgentes 650,San Miguel,22/01/2021,Natural,ambos
+CL-0088,Angel Davila,Farmacia La Victoria,PRIVADO,1074946608,917856086,angel.davila@email.com,Av. Morro Solar 1100,Santiago de Surco,05/04/2024,Natural,sms
+CL-0089,Brenda Escobar,Servicios de Terapia Ocupacional,PUBLICO,2035008445,937481659,brenda.escobar@email.com,Jr. Mariscal Luzuriaga 120,Jesus Maria,15/06/2021,Empresa,sms
+CL-0090,Camilo Flores,Clinica de Fertilidad Los Andes,PRIVADO,2090652382,993911088,camilo.flores@email.com,Av. El Sol 400,Chorrillos,13/10/2025,Empresa,ambos
+CL-0091,Dina Guevara,Laboratorios de Control Ambiental,PRIVADO,1078957451,944152672,dina.guevara@email.com,Jr. Leoncio Prado 900,Magdalena del Mar,06/03/2025,Natural,email
+CL-0092,Edwin Hidalgo,Farmacia El Sol de Barranco,PUBLICO,2033655636,980173830,edwin.hidalgo@email.com,Av. Gran Chimu 800,San Juan de Lurigancho,02/10/2025,Empresa,sms
+CL-0093,Fabiola Izquierdo,Centro Medico de Especialidades VMT,PRIVADO,1081288450,980393495,fabiola.izquierdo@email.com,Av. Puno 100,Comas,09/07/2022,Natural,sms
+CL-0094,German Jara,Medicina del Deporte y Nutricion,PUBLICO,2098284732,975251942,german.jara@email.com,Calle Choquehuanca 150,San Isidro,16/08/2024,Empresa,ambos
+CL-0095,Heidi Kollantes,Clinica de Oncologia Avanzada,PRIVADO,2058321207,984382640,heidi.kollantes@email.com,Av. Larco 700,Miraflores,11/07/2021,Empresa,ambos
+CL-0096,Ivan Leon,Laboratorios de Pruebas de Alergia,PRIVADO,2048161825,959125298,ivan.leon@email.com,Av. Naranjal 550,Los Olivos,30/10/2023,Empresa,sms
+CL-0097,Jazmin Moya,Farmacia Lira y Compania,PRIVADO,1094793030,918099893,jazmin.moya@email.com,Av. Chinchaysuyo 1500,Independencia,21/01/2022,Natural,sms
+CL-0098,Kevin Noriega,Servicios de Cuidados Paliativos,PRIVADO,1082612193,962434504,kevin.noriega@email.com,Jr. Los Girasoles 80,Carabayllo,26/07/2022,Natural,sms
+CL-0099,Lourdes Ojeda,Clinica de Columna y Dolor,PUBLICO,2028782526,967289541,lourdes.ojeda@email.com,Av. Huancaray 500,Santa Anita,17/02/2025,Empresa,ambos
+CL-0100,Marcos Pacheco,Laboratorios de Deteccion de Drogas,PRIVADO,1066526278,918754589,marcos.pacheco@email.com,"Sector 6, Grupo 1", Grupo 1,21/07/2023,Natural,sms
+CL-0101,Nicole Quispe,Farmacia El Centro de SJL,PRIVADO,2080253527,918202291,nicole.quispe@email.com,Av. Honorio Delgado 400,San Martin de Porres,25/06/2024,Empresa,email
+CL-0102,Omar Rojas,Centro de Psicologia y Coaching,PRIVADO,1079051762,962112447,omar.rojas@email.com,Av. San Gabriel 700,Villa Maria del Triunfo,29/09/2024,Natural,email
+CL-0103,Pamela Soto,Medicina Hiperbarica del Peru,PRIVADO,2036261437,945675001,pamela.soto@email.com,Jr. Iquique 50,Brena,20/10/2023,Empresa,email
+CL-0104,Quique Tello,Clinica Dental Protesis Fijas,PRIVADO,2062327296,989981789,quique.tello@email.com,Calle Los Pinos 10,Lurin,30/09/2024,Empresa,email
+CL-0105,Raquel Ugarte,Laboratorios de Investigacion Oncologica,PRIVADO,2064713752,983117671,raquel.ugarte@email.com,Jr. Loreto 450,Rimac,15/04/2025,Empresa,ambos
+CL-0106,Saul Vasquez,Farmacia La Bendicion,PRIVADO,1032823088,982089872,saul.vasquez@email.com,Av. Javier Prado Este 3000,San Borja,24/02/2021,Natural,email
+CL-0107,Teresa Watanabe,Servicios de Audiologia y Oido,PUBLICO,2068819300,971817175,teresa.watanabe@email.com,Calle Los Negocios 200,Surquillo,12/12/2022,Empresa,ambos
+CL-0108,Ulises Xavier,Clinica de Reumatologia y Articulaciones,PRIVADO,1055492160,967406578,ulises.xavier@email.com,Av. Ricardo Palma 900,Miraflores,30/08/2021,Natural,sms
+CL-0109,Victoria Yactayo,Laboratorios de Control de Plagas,PUBLICO,2065191097,955005784,victoria.yactayo@email.com,Av. Del Parque 600,La Molina,17/01/2022,Empresa,sms
+CL-0110,Walter Zarate,Farmacia El Buen Pastor,PRIVADO,1058716435,924470472,walter.zarate@email.com,Jr. Manuel Gomez 115,Lince,25/02/2022,Natural,ambos
+CL-0111,Yolanda Alcala,Centro de Salud Integral Los Olivos,PRIVADO,1069093289,951448662,yolanda.alcala@email.com,Av. Paso de los Andes 700,Pueblo Libre,21/10/2023,Natural,sms
+CL-0112,Zosimo Benitez,Medicina Genomica y Predictiva,PRIVADO,1016263520,916751709,zosimo.benitez@email.com,Av. Riva Aguero 1200,San Miguel,23/09/2021,Natural,ambos
+CL-0113,Aldo Chacon,Clinica de Dolor Cronico Lima,PRIVADO,2075574042,978141210,aldo.chacon@email.com,Av. El Derby 350,Santiago de Surco,03/01/2023,Empresa,ambos
+CL-0114,Belen Delgado,Laboratorios de Pruebas Ambientales,PRIVADO,1030772877,926787769,belen.delgado@email.com,Jr. Huiracocha 250,Jesus Maria,27/03/2024,Natural,ambos
+CL-0115,Cristian Espinosa,Farmacia La Victoria Express,PUBLICO,2066935484,987127515,cristian.espinosa@email.com,Av. Las Gaviotas 300,Chorrillos,09/10/2025,Empresa,sms
+CL-0116,Doris Fernandez,Servicios de Ecografias 3D/4D,PRIVADO,1081689211,936815995,doris.fernandez@email.com,Calle Roca de Vergallo 10,Magdalena del Mar,07/08/2022,Natural,email
+CL-0117,Elias Gutierrez,Clinica de Endoscopia y Colonoscopia,PRIVADO,1058435352,960369037,elias.gutierrez@email.com,Av. Santa Rosa 1500,San Juan de Lurigancho,30/06/2025,Natural,sms
+CL-0118,Fatima Hernandez,Laboratorios de Control Alimentario,PRIVADO,2076542874,976329277,fatima.hernandez@email.com,Av. Belaunde 950,Comas,02/12/2022,Empresa,email
+CL-0119,Gabriel Ibarra,Farmacia del Obrero,PUBLICO,2091778671,913051764,gabriel.ibarra@email.com,Calle Dean Valdivia 10,San Isidro,13/10/2022,Empresa,ambos
+CL-0120,Hilda Jimenez,Centro de Terapias Alternativas,PRIVADO,2053031771,998091103,hilda.jimenez@email.com,Av. Benavides 2000,Miraflores,09/10/2022,Empresa,sms
+CL-0121,Igor Koc,Medicina Estetica Integral Peru,PRIVADO,1047050932,937723914,igor.koc@email.com,Av. Antunez de Mayolo 100,Los Olivos,28/12/2024,Natural,ambos
+CL-0122,Jazmin Lopez,Clinica de Geriatria y Demencia,PRIVADO,1079114212,962447752,jazmin.lopez@email.com,Av. Carlos Wiesse 50,San Juan de Lurigancho,13/12/2024,Natural,sms
+CL-0123,Kenji Mendez,Laboratorios de Diagnostico Rapido,PUBLICO,2091318752,966325043,kenji.mendez@email.com,Jr. Cuzco 100,Carabayllo,19/01/2023,Empresa,email
+CL-0124,Liliana Narvaez,Farmacia El Buen Samaritano,PUBLICO,2023492698,999419788,liliana.narvaez@email.com,Av. La Encalada 300,Santiago de Surco,09/03/2022,Empresa,sms
+CL-0125,Moises Olivares,Servicios de Salud Movil Lima,PRIVADO,1057257077,943411617,moises.olivares@email.com,"Sector 4, Grupo 12", Grupo 12,13/02/2024,Natural,ambos
+CL-0126,Noelia Paredes,Clinica de Medicina Preventiva,PRIVADO,1031326399,965162208,noelia.paredes@email.com,Av. Tomas Valle 150,San Martin de Porres,11/05/2023,Natural,email
+CL-0127,Oliver Quijano,Laboratorios de Pruebas de Paternidad,PRIVADO,1057368927,938383888,oliver.quijano@email.com,Av. 26 de Noviembre 800,Villa Maria del Triunfo,26/11/2023,Natural,ambos
+CL-0128,Paola Ramos,Farmacia Lince Ahorro,PUBLICO,2094087625,959843531,paola.ramos@email.com,Jr. Mariano Cornejo 700,Brena,13/02/2025,Empresa,sms
+CL-0129,Quique Salazar,Centro de Radiologia y Terapia,PUBLICO,2068811241,968200730,quique.salazar@email.com,Av. San Pedro 50,Lurin,26/06/2022,Empresa,sms
+CL-0130,Roxana Torres,Medicina del Dolor y Cuidados Paliativos,PRIVADO,1032016510,922188599,roxana.torres@email.com,Jr. Huaraz 10,Brena,07/11/2021,Natural,email
+CL-0131,Sergio Urbina,Clinica de Cirugia Laparoscopica,PRIVADO,1098201473,945698893,sergio.urbina@email.com,Av. Fray Luis de Leon 30,San Borja,22/08/2023,Natural,sms
+CL-0132,Tatiana Vidal,Laboratorios de Pruebas Bioquimicas,PRIVADO,1042335991,931116099,tatiana.vidal@email.com,Calle Junin 550,Surquillo,10/06/2022,Natural,ambos
+CL-0133,Uriel Wong,Farmacia Surquillo 24 Horas,PRIVADO,1089269624,936679778,uriel.wong@email.com,Av. Pardo y Aliaga 10,San Isidro,07/05/2022,Natural,ambos
+CL-0134,Valentina Yanez,Servicios de Rehabilitacion Neurologica,PRIVADO,2048977525,975176137,valentina.yanez@email.com,Jr. Las Dalias 200,La Molina,10/07/2021,Empresa,sms
+CL-0135,Wilfredo Zarate,Clinica de Medicina Interna San Blas,PRIVADO,1051973032,924958825,wilfredo.zarate@email.com,Av. Petit Thouars 1500,Lince,21/07/2024,Natural,ambos
+CL-0136,Ximena Acosta,Laboratorios de Control de Agua,PRIVADO,1039475088,987081424,ximena.acosta@email.com,Jr. Mariano Odria 100,Pueblo Libre,26/10/2021,Natural,sms
+CL-0137,Yago Benitez,Farmacia La Esperanza del Sur,PRIVADO,2049059159,915550060,yago.benitez@email.com,Av. Los Patriotas 30,San Miguel,29/05/2021,Empresa,email
+CL-0138,Zulma Cabrera,Centro de Nutricion y Dietetica,PRIVADO,2085841070,919767511,zulma.cabrera@email.com,Calle Monte Grande 400,Santiago de Surco,25/10/2022,Empresa,ambos
+CL-0139,Ariel Diaz,Medicina Hiperbarica Sur,PUBLICO,2073395168,931998159,ariel.diaz@email.com,Jr. Talara 111,Jesus Maria,16/09/2021,Empresa,email
+CL-0140,Bianca Espinoza,Clinica Dental Sonrisa Fina,PRIVADO,1052160123,922759339,bianca.espinoza@email.com,Av. Guardia Peruana 70,Chorrillos,20/09/2022,Natural,ambos
+CL-0141,Camilo Flores,Laboratorios de Analisis Clinicos San Judas,PRIVADO,1036941152,965424687,camilo.flores@email.com,Av. Brasil 3000,Magdalena del Mar,24/10/2021,Natural,email
+CL-0142,Dayana Gomez,Farmacia La Botica del Vecino,PRIVADO,1024872262,999066638,dayana.gomez@email.com,Av. 13 de Enero 500,San Juan de Lurigancho,16/02/2021,Natural,sms
+CL-0143,Erick Herrera,Servicios de Ambulancia Privada,PRIVADO,1029950540,999784790,erick.herrera@email.com,Av. Los Angeles 10,Comas,06/01/2023,Natural,sms
+CL-0144,Fabian Ibarra,Clinica de Fertilidad Vida Nueva,PRIVADO,2044304290,930656583,fabian.ibarra@email.com,Calle Los Ficus 200,San Isidro,08/06/2023,Empresa,ambos
+CL-0145,Gladys Jimenez,Laboratorios de Genetica Forense,PRIVADO,1026563825,944386933,gladys.jimenez@email.com,Av. Angamos Oeste 1000,Miraflores,26/10/2021,Natural,ambos
+CL-0146,Hernan Koc,Farmacia Lince Economica,PRIVADO,1055607437,984777982,hernan.koc@email.com,Av. Tomas Valle 900,Los Olivos,21/01/2021,Natural,email
+CL-0147,Ines Lopez,Centro de Salud Ocupacional Delta,PRIVADO,1012810153,984943802,ines.lopez@email.com,Av. Metropolitana 50,Independencia,27/12/2023,Natural,ambos
+CL-0148,Jorge Mendez,Medicina Deportiva y Kinesiologia,PRIVADO,1049766269,938189321,jorge.mendez@email.com,Jr. San Luis 300,Carabayllo,02/12/2022,Natural,ambos
+CL-0149,Karen Narvaez,Clinica de Medicina Estetica Fina,PRIVADO,2088515241,989876176,karen.narvaez@email.com,Av. Bolognesi 10,Barranco,08/08/2021,Empresa,ambos
+CL-0150,Juan Quispe,Laboratorios de Control de Calidad LNS,PUBLICO,2033402556,924937104,juan.quispe@email.com,"Sector 7, Grupo 4",Villa El Salvador,08/03/2021,Empresa,sms
