@@ -96,7 +96,7 @@ async def collect_and_save_data(
 if __name__ == "__main__":
     # -- Configuration for local run --
     output_dir = "data"
-    now_iso = datetime.now().isoformat().replace(":", "-")
+    now_iso = datetime.now().isoformat()
     output_file = f"{output_dir}/crypto_prices_{now_iso}.parquet"
 
     asyncio.run(

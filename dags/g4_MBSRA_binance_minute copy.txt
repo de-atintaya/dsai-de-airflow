@@ -31,7 +31,7 @@ def binance_downloader_dag():
         """
         # -- Configuration --
         # Generate dynamic file paths inside the task to ensure uniqueness for each run
-        now_iso = datetime.now().isoformat().replace(":", "-")
+        now_iso = datetime.now().isoformat()
         output_dir = "data"
         output_file = f"{output_dir}/crypto_prices_{now_iso}.parquet"
         blob_name = f"raw/airflow/g4/crypto_prices/{os.path.basename(output_file)}"
