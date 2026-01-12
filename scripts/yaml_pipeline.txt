@@ -1,0 +1,30 @@
+resources:
+  jobs:
+    g4_MBRSA_sql_etl:
+      name: g4_MBRSA_sql_etl
+      schedule:
+        quartz_cron_expression: 3 0 3 * * ?
+        timezone_id: America/Bogota
+        pause_status: UNPAUSED
+      tasks:
+        - task_key: g4_MBRSA_bronze_extract
+          notebook_task:
+            notebook_path: /Workspace/Users/sebastian.lopez.me@utec.edu.pe/medallion_1_g4/medallion_etl_g4/01_extract
+            source: WORKSPACE
+          existing_cluster_id: 1115-032207-bceuzqps
+        - task_key: g4_MBRSA_silver_transform
+          depends_on:
+            - task_key: g4_MBRSA_bronze_extract
+          notebook_task:
+            notebook_path: /Workspace/Users/sebastian.lopez.me@utec.edu.pe/medallion_1_g4/medallion_etl_g4/02_transform
+            source: WORKSPACE
+          existing_cluster_id: 1115-032207-bceuzqps
+        - task_key: g4_MBRSA_gold_aggregate
+          depends_on:
+            - task_key: g4_MBRSA_silver_transform
+          notebook_task:
+            notebook_path: /Workspace/Users/sebastian.lopez.me@utec.edu.pe/medallion_1_g4/medallion_etl_g4/03_aggregate
+            source: WORKSPACE
+          existing_cluster_id: 1115-032207-bceuzqps
+      queue:
+        enabled: true

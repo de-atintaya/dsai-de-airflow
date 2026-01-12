@@ -1,13 +1,13 @@
 from airflow.decorators import dag, task
 from pendulum import timezone
 from scripts.azure_upload import upload_to_adls
-from scripts.helpers import add_date_suffix
+from scripts.helpers import add_datetime_suffix
 from datetime import datetime, timedelta
 
 LOCAL_FILE_PATH = "/opt/airflow/data/sample.txt"
 CONTAINER_NAME = "datalake"  # airflow
 WASB_CONN_ID = "utec_blob_storage"
-BLOB_NAME = "raw/airflow/G0/archivo_subido.txt"
+BLOB_NAME = "raw/airflow/G4/archivo_subido.txt"
 
 default_args = {
     "owner": "airflow",
@@ -17,7 +17,7 @@ default_args = {
 
 
 @dag(
-    dag_id="g0_utec",
+    dag_id="g4_utec",
     description="Uploads a local file to Azure Blob Storage with a date suffix.",
     default_args=default_args,
     start_date=datetime(2025, 1, 1, tzinfo=timezone("America/Bogota")),
@@ -28,7 +28,7 @@ default_args = {
 def upload_dag():
     @task
     def call_upload():
-        new_blob_name = add_date_suffix(BLOB_NAME)
+        new_blob_name = add_datetime_suffix(BLOB_NAME)
         upload_to_adls(
             local_file_path=LOCAL_FILE_PATH,
             container_name=CONTAINER_NAME,
