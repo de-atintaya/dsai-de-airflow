@@ -4,6 +4,7 @@ from scripts.azure_upload import upload_to_adls
 from scripts.helpers import add_date_suffix
 from datetime import datetime, timedelta
 
+# Edicion
 LOCAL_FILE_PATH = "/opt/airflow/data/mining_stdtravel.csv"
 CONTAINER_NAME = "airflow"
 BLOB_NAME = "raw/G6/archivo_subido_mining_stdtravel.csv"
