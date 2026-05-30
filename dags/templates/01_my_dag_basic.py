@@ -1,6 +1,6 @@
-from airflow import DAG
-from airflow.operators.python import PythonOperator, BranchPythonOperator
-from airflow.operators.bash import BashOperator
+from airflow.providers.standard.operators.bash import BashOperator
+from airflow.providers.standard.operators.python import BranchPythonOperator, PythonOperator
+from airflow.sdk import DAG
 # from airflow.timetables.interval import CronDataIntervalTimetable
 from airflow.timetables.trigger import MultipleCronTriggerTimetable
 from random import randint
@@ -30,7 +30,7 @@ with DAG(
     schedule=MultipleCronTriggerTimetable("@daily", timezone="UTC"),
     catchup=False
     ) as dag:
-    # schedule_interval="@daily"    : Cron expression or pre-sets cron expressions. See https://crontab.guru/
+    # schedule="@daily"             : Cron expression or pre-sets cron expressions. See https://crontab.guru/
     # catchup=False                 : This way only latest no triggered diagram will be automatically triggered
     # dag                           : each time a dag is triggered a diagram object is created,
     #                                 which is an instance of the dag running at a given day

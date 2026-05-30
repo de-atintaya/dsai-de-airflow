@@ -1,8 +1,12 @@
-from airflow.decorators import dag, task
+# %%
+
+from airflow.sdk import dag, task
 from pendulum import timezone
 from scripts.azure_upload import upload_to_adls
 from scripts.helpers import add_date_suffix
 from datetime import datetime, timedelta
+
+# %%
 
 LOCAL_FILE_PATH = "/opt/airflow/data/sample.txt"
 CONTAINER_NAME = "airflow"

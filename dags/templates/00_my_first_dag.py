@@ -1,5 +1,5 @@
-from airflow import DAG
-from airflow.operators.python import PythonOperator
+from airflow.providers.standard.operators.python import PythonOperator
+from airflow.sdk import DAG
 from datetime import datetime
 
 def print_hello():
@@ -11,7 +11,7 @@ with DAG(
     schedule="@daily",  # This runs the DAG once per day
     catchup=False  # Don't run past scheduled runs
 ) as dag:
-    
+
     hello_task = PythonOperator(
         task_id="print_hello_task",  # Task name in Airflow
         python_callable=print_hello  # Function to run when the task is triggered

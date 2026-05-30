@@ -1,4 +1,4 @@
-from airflow.decorators import dag, task
+from airflow.sdk import dag, task
 from datetime import datetime
 import pandas as pd
 from scripts.helpers import leer_datos, transformar_datos, resumir_datos, guardar_datos

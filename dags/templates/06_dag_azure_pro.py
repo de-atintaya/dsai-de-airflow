@@ -1,4 +1,4 @@
-from airflow.decorators import dag, task
+from airflow.sdk import dag, task
 from pendulum import timezone
 from scripts.azure_upload import upload_to_adls
 from scripts.helpers import add_date_suffix

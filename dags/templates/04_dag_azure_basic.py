@@ -1,4 +1,4 @@
-from airflow.decorators import dag, task
+from airflow.sdk import dag, task
 from airflow.providers.microsoft.azure.hooks.wasb import WasbHook
 from datetime import datetime, timedelta
 
