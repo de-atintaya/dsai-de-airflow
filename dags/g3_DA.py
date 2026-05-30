@@ -15,7 +15,7 @@ default_args = {
 }
 
 @dag(
-    dag_id="g3_atm",
+    dag_id="g3_DA",
     description="Uploads a local file to Azure Blob Storage with a date suffix.",
     default_args=default_args,
     start_date=datetime(2025, 1, 1, tzinfo=timezone("America/Bogota")),
