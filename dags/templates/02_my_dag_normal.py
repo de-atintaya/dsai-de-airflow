@@ -1,13 +1,8 @@
-from airflow import DAG
-from airflow.decorators import task, dag
-from airflow.operators.empty import EmptyOperator
+from airflow.sdk import dag, task
 from airflow.timetables.trigger import MultipleCronTriggerTimetable
 from pendulum import timezone
 from datetime import datetime, timedelta
 from random import randint
-
-# from airflow.operators.python import PythonOperator, BranchPythonOperator
-# from airflow.operators.bash import BashOperator
 
 # 1. Default arguments
 default_args = {
@@ -21,7 +16,7 @@ default_args = {
 @dag(
     dag_id="02_my_dag_normal",
     default_args=default_args,
-    schedule=MultipleCronTriggerTimetable("@daily", timezone="UTC"),  # Airflow 3.0 style
+    schedule=MultipleCronTriggerTimetable("@daily", timezone="UTC"),  # Airflow 3.x style
     tags=["example", "training"],
 )
 def my_training_pipeline():

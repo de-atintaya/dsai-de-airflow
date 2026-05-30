@@ -1,12 +1,18 @@
+# %%
+
 from airflow.sdk import dag, task
 from pendulum import timezone
 from scripts.azure_upload import upload_to_adls
 from scripts.helpers import add_date_suffix
 from datetime import datetime, timedelta
+from pathlib import Path
 
-LOCAL_FILE_PATH = "/opt/airflow/data/sample.txt"
+# %%
+
+Data_DIR = Path("/opt/airflow/data/g1_data")
 CONTAINER_NAME = "airflow"
-BLOB_NAME = "raw/uploaded_sample.txt"
+# BLOB_NAME = "raw/G1/archivo_subido.txt"
+
 
 default_args = {
     'owner': 'airflow',
@@ -15,7 +21,7 @@ default_args = {
 }
 
 @dag(
-    dag_id="06_dag_azure_pro",
+    dag_id="g1_pgde",
     description="Uploads a local file to Azure Blob Storage with a date suffix.",
     default_args=default_args,
     start_date=datetime(2025, 1, 1, tzinfo=timezone("America/Bogota")),
@@ -26,14 +32,26 @@ default_args = {
 def upload_dag():
 
     @task
-    def call_upload():
-        new_blob_name = add_date_suffix(BLOB_NAME)
+    def build_file_list() -> list[dict[str, str]]:
+        files: list = []
+        for file in Data_DIR.glob("*.txt"):
+            files.append(
+                {
+                    "local_file_path": str(file),
+                    "blob_name": f"raw/G1/{file.name}"
+                }
+            )
+        return files
+
+
+    @task
+    def call_upload(file_cfg: dict[str, str]):
         upload_to_adls(
-            local_file_path=LOCAL_FILE_PATH,
+            local_file_path=file_cfg["local_file_path"],
             container_name=CONTAINER_NAME,
-            blob_name=new_blob_name
+            blob_name=add_date_suffix(file_cfg["blob_name"])
             )
 
-    call_upload()
+    call_upload.expand(file_cfg=build_file_list())
 
 dag = upload_dag()
