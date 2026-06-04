@@ -8,7 +8,7 @@ def upload_to_adls(
         local_file_path = "/opt/airflow/data/sample.txt",
         container_name = "airflow",
         blob_name = "raw/uploaded_sample.txt",
-        wasb_conn_id = "azure_blob_storage"
+        wasb_conn_id = "azure_blob_storage_parcial"
         ):
     try:
         if not os.path.exists(local_file_path):
