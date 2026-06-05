@@ -49,36 +49,13 @@ def meteorologia_dag():
         df = pd.read_excel(ruta_local_excel)
 
         # ==============================================================
-        # TRANSFORMACIÓN 1: Normalización de Columnas (Snake Case)
-        # ==============================================================
-        diccionario_columnas = {
-            'Estación': 'estacion_id',
-            'Fecha': 'fecha',
-            'Temperatura (°C)': 'temperatura_c',
-            'Temperatura.Max (°C)': 'temperatura_max_c',
-            'Temperatura.Min (°C)': 'temperatura_min_c',
-            'Velocidad.viento (m/s)': 'velocidad_viento_ms',
-            'Velocidad.viento.Max (m/s)': 'velocidad_viento_max_ms',
-            'Dirección.viento (°)': 'direccion_viento_deg',
-            'Dirección.viento.Moda (°)': 'direccion_viento_moda_deg',
-            'Humedad (%)': 'humedad_pct',
-            'Humedad.Max (%)': 'humedad_max_pct',
-            'Humedad.Min (%)': 'humedad_min_pct',
-            'Precipitación (mm)': 'precipitacion_mm',
-            'Evaporación (mm)': 'evaporacion_mm',
-            'Presión (mbar)': 'presion_mbar',
-            'Radiación (W/m2)': 'radiacion_wm2'
-        }
-        df = df.rename(columns=diccionario_columnas)
-
-        # ==============================================================
-        # TRANSFORMACIÓN 2: Cambio de Formato Estructural (Excel -> CSV)
+        # TRANSFORMACIÓN 1: Cambio de Formato Estructural (Excel -> CSV)
         # ==============================================================
         df.to_csv(ruta_local_csv, index=False, encoding='utf-8')
         print(f"Conversión técnica a CSV completada de manera exitosa: {nombre_csv_final}")
 
         # ==============================================================
-        # TRANSFORMACIÓN 3: Nomenclatura y Particionado Externo (Data Lake)
+        # TRANSFORMACIÓN 2: Nomenclatura y Particionado Externo (Data Lake)
         # ==============================================================
         # Estructura final en Azure: raw/meteorologia/G3/AÑO/MES/DÍA/archivo.csv
         blob_path = f"raw/meteorologia/G3/{anio}/{mes}/{dia}/{nombre_csv_final}"
