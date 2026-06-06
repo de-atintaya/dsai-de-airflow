@@ -10,7 +10,8 @@ from airflow.providers.microsoft.azure.hooks.wasb import WasbHook
 CONTAINER_NAME = "datalake"
 WASB_CONN_ID = "utec_blob_storage"
 # La data está fuera de dags, por lo que Docker la monta en esta ruta interna:
-LOCAL_DATA_DIR = "/opt/airflow/data" 
+LOCAL_DATA_DIR = "/opt/airflow/data"
+BLOB_NAME = "raw/airflow/G3/"
 
 default_args = {
     'owner': 'grupo_3',
@@ -87,7 +88,7 @@ def meteorologia_dag():
         # ==========================================================
 
         blob_path = (
-            f"raw/meteorologia/"
+            f"{BLOB_NAME}"
             f"estacion={file_name}/"
             f"fecha_carga={fecha_carga}/"
             f"{nombre_csv_final}"
