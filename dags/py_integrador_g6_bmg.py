@@ -6,7 +6,8 @@ from scripts.azure_upload import upload_to_adls
 from scripts.helpers import leer_datos, transformar_datos, guardar_datos, add_date_suffix
 
 LOCAL_DATA_DIR = "/opt/airflow/data"
-CONTAINER_NAME = "airflow"
+CONTAINER_NAME = "datalake" # airflow
+WASB_CONN_ID = "utec_blob_storage"
 BLOB_PREFIX = "raw/G6"
 
 default_args = {
