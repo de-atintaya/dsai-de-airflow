@@ -3,6 +3,7 @@ from pendulum import timezone
 from datetime import datetime, timedelta
 import pandas as pd
 import os
+import logging
 from airflow.providers.microsoft.azure.hooks.wasb import WasbHook
 
 # --- CONFIGURACIÓN DE CONSTANTES (ESTRUCTURA DE TU REPOSITORIO) ---
@@ -22,88 +23,131 @@ default_args = {
     description="Pipeline de ingesta y transformación mínima de estaciones meteorológicas (Grupo 3)",
     default_args=default_args,
     start_date=datetime(2026, 1, 1, tzinfo=timezone("America/Bogota")), # Zona horaria local (GMT-5)
-    schedule="@hourly", # Frecuencia horaria requerida para meteorología
+    schedule="@daily", # Frecuencia horaria requerida para meteorología
     catchup=False,
     tags=["utec", "g3", "meteorologia", "raw"],
 )
+
 def meteorologia_dag():
 
-    # Definimos el proceso técnico como una tarea nativa de Airflow
-    @task(task_id="procesar_y_subir_estacion")
-    def procesar_estacion(file_name: str):
-        import os
-        print("Instalando dependencia faltante openpyxl...")
-        os.system("pip install openpyxl")
-        
+    @task(task_id="validate_files")
+    def validate_files(file_name):
+
         ruta_local_excel = f"{LOCAL_DATA_DIR}/{file_name}.xlsx"
-        
-        # 1. Captura de tiempos actuales para el particionado dinámico
+
+        if not os.path.exists(ruta_local_excel):
+            raise FileNotFoundError(
+                f"Archivo no encontrado: {ruta_local_excel}"
+            )
+
+        if os.path.getsize(ruta_local_excel) == 0:
+            raise ValueError(
+                f"Archivo vacío: {ruta_local_excel}"
+            )
+
+        logging.info(f"Archivo validado: {ruta_local_excel}")
+
+        return file_name
+
+    @task(task_id="create_raw_paths")
+    def create_raw_paths(file_name):
+
+        ruta_local_excel = f"{LOCAL_DATA_DIR}/{file_name}.xlsx"
+
         ahora = datetime.now()
-        anio, mes, dia = ahora.strftime("%Y"), ahora.strftime("%m"), ahora.strftime("%d")
+
+        fecha_carga = ahora.strftime("%Y-%m-%d")
         timestamp_archivo = ahora.strftime("%Y%m%d_%H%M")
-        
+
         nombre_csv_final = f"{file_name}_{timestamp_archivo}.csv"
         ruta_local_csv = f"{LOCAL_DATA_DIR}/{nombre_csv_final}"
 
-        print(f"Iniciando lectura de: {ruta_local_excel}")
-        df = pd.read_excel(ruta_local_excel)
+        logging.info(f"Leyendo archivo: {ruta_local_excel}")
 
-        # ==============================================================
-        # TRANSFORMACIÓN 1: Normalización de Columnas (Snake Case)
-        # ==============================================================
-        diccionario_columnas = {
-            'Estación': 'estacion_id',
-            'Fecha': 'fecha',
-            'Temperatura (°C)': 'temperatura_c',
-            'Temperatura.Max (°C)': 'temperatura_max_c',
-            'Temperatura.Min (°C)': 'temperatura_min_c',
-            'Velocidad.viento (m/s)': 'velocidad_viento_ms',
-            'Velocidad.viento.Max (m/s)': 'velocidad_viento_max_ms',
-            'Dirección.viento (°)': 'direccion_viento_deg',
-            'Dirección.viento.Moda (°)': 'direccion_viento_moda_deg',
-            'Humedad (%)': 'humedad_pct',
-            'Humedad.Max (%)': 'humedad_max_pct',
-            'Humedad.Min (%)': 'humedad_min_pct',
-            'Precipitación (mm)': 'precipitacion_mm',
-            'Evaporación (mm)': 'evaporacion_mm',
-            'Presión (mbar)': 'presion_mbar',
-            'Radiación (W/m2)': 'radiacion_wm2'
+        try:
+            df = pd.read_excel(ruta_local_excel)
+        except Exception as e:
+            raise ValueError(
+                f"Formato inválido o archivo corrupto: {ruta_local_excel}"
+            ) from e
+
+        df.to_csv(
+            ruta_local_csv,
+            index=False,
+            encoding="utf-8"
+        )
+
+        # ==========================================================
+        # ESTRUCTURA
+        # raw/
+        # └── meteorologia/
+        #     └── estacion=EM_01/
+        #         └── fecha_carga=2026-06-06/
+        #             └── EM_01_20260606_1200.csv
+        # ==========================================================
+
+        blob_path = (
+            f"raw/meteorologia/"
+            f"estacion={file_name}/"
+            f"fecha_carga={fecha_carga}/"
+            f"{nombre_csv_final}"
+        )
+
+        logging.info(f"Ruta Raw creada: {blob_path}")
+
+        return {
+            "file_name": file_name,
+            "csv_path": ruta_local_csv,
+            "blob_path": blob_path,
         }
-        df = df.rename(columns=diccionario_columnas)
 
-        # ==============================================================
-        # TRANSFORMACIÓN 2: Cambio de Formato Estructural (Excel -> CSV)
-        # ==============================================================
-        df.to_csv(ruta_local_csv, index=False, encoding='utf-8')
-        print(f"Conversión técnica a CSV completada de manera exitosa: {nombre_csv_final}")
+    @task(task_id="upload_files")
+    def upload_files(info):
 
-        # ==============================================================
-        # TRANSFORMACIÓN 3: Nomenclatura y Particionado Externo (Data Lake)
-        # ==============================================================
-        # Estructura final en Azure: raw/meteorologia/G3/AÑO/MES/DÍA/archivo.csv
-        blob_path = f"raw/meteorologia/G3/{anio}/{mes}/{dia}/{nombre_csv_final}"
-        
-        print(f"Conectando a Azure Storage (Conexión: {WASB_CONN_ID})")
-        wasb_hook = WasbHook(wasb_conn_id=WASB_CONN_ID)
-        
-        print(f"Subiendo archivo a contenedor '{CONTAINER_NAME}' con ruta: {blob_path}")
-        with open(ruta_local_csv, 'rb') as data:
-            wasb_hook.upload(
-                container_name=CONTAINER_NAME,
-                blob_name=blob_path,
-                data=data,
-                overwrite=True
+        logging.info(
+            f"Conectando a Azure Storage ({WASB_CONN_ID})"
+        )
+
+        try:
+            wasb_hook = WasbHook(
+                wasb_conn_id=WASB_CONN_ID
             )
-        
-        # Limpieza higiene local: eliminamos el CSV temporal para no saturar el servidor perimetral
-        os.remove(ruta_local_csv)
-        print(f"¡Estación {file_name} procesada, particionada e ingastada en el Data Lake con éxito!")
 
-    # --- FLUJO DE EJECUCIÓN (Paralelismo Nativo) ---
-    # Al llamar las tres tareas de forma independiente, Airflow las ejecuta EN PARALELO de forma automática
-    procesar_estacion("EM_01")
-    procesar_estacion("EM_02")
-    procesar_estacion("EM_03")
+            with open(info["csv_path"], "rb") as data:
 
-# Instanciamos el objeto global del DAG
+                wasb_hook.upload(
+                    container_name=CONTAINER_NAME,
+                    blob_name=info["blob_path"],
+                    data=data,
+                    overwrite=True,
+                )
+
+        except Exception as e:
+            raise ConnectionError(
+                "No se pudo conectar o cargar archivo en Azure Data Lake"
+            ) from e
+
+        if os.path.exists(info["csv_path"]):
+            os.remove(info["csv_path"])
+
+        logging.info(
+            f"Archivo {info['file_name']} cargado correctamente"
+        )
+
+    # EM_01
+    em01 = validate_files("EM_01")
+    em01_raw = create_raw_paths(em01)
+    upload_files(em01_raw)
+
+    # EM_02
+    em02 = validate_files("EM_02")
+    em02_raw = create_raw_paths(em02)
+    upload_files(em02_raw)
+
+    # EM_03
+    em03 = validate_files("EM_03")
+    em03_raw = create_raw_paths(em03)
+    upload_files(em03_raw)
+
+
 dag = meteorologia_dag()
