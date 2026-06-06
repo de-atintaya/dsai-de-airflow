@@ -6,7 +6,7 @@ import os
 import logging
 from airflow.providers.microsoft.azure.hooks.wasb import WasbHook
 
-# --- CONFIGURACIÓN DE CONSTANTES (ESTRUCTURA DE TU REPOSITORIO) ---
+# --- CONFIGURACIÓN DE CONSTANTES ---
 CONTAINER_NAME = "datalake"
 WASB_CONN_ID = "utec_blob_storage"
 # La data está fuera de dags, por lo que Docker la monta en esta ruta interna:
