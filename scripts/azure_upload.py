@@ -24,6 +24,17 @@ def upload_to_adls(
             overwrite=True
         )
 
+        # #############################################################################################
+        # # Avoid using hook.load_file() to overload RAM.
+        # blob_client = hook.get_conn().get_blob_client(container=container_name, blob=blob_name)
+
+        # log.info(f"==> Starting streaming upload of {local_file_path}...")
+
+        # # Open file in binary mode ('rb') to upload it in chunks
+        # with open(local_file_path, "rb") as data:
+        #     blob_client.upload_blob(data, overwrite=True)
+        # #############################################################################################
+
         log.info(f"==> Uploaded {local_file_path} to {container_name}/{blob_name}")
     except Exception as e:
         log.error("==> Failed to upload to Azure Blob", exc_info=True)
