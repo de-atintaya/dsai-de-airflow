@@ -24,7 +24,7 @@ default_args = {
     description="Uploads multiple local folders to Azure Blob Storage dynamically.",
     default_args=default_args,
     start_date=datetime(2025, 1, 1, tzinfo=timezone("America/Bogota")),
-    schedule="0 12 * * 1", # Runs every monday at 12:00 local time (GMT-5)
+    schedule="0 6 * * *", # Runs every day at 6:00 AM
     catchup=False,
     tags=["G1", "asistencia", "notas","azure", "blob", "upload"],
 )
