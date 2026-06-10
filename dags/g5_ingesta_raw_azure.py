@@ -33,7 +33,7 @@ def upload_dag():
             local_file_path=LOCAL_FILE_PATH,
             container_name=CONTAINER_NAME,
             blob_name=new_blob_name,
-            wasb_conn_id="azure_blob_storage",
+            wasb_conn_id="utec_blob_storage",
         )
 
     cargar_archivo_raw()
