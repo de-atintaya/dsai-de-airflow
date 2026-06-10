@@ -4,12 +4,21 @@ from scripts.azure_upload import upload_to_adls
 from scripts.helpers import add_date_suffix
 from datetime import datetime, timedelta
 
-LOCAL_FILE_PATH = "/opt/airflow/data/mining_stdtravel.csv" 
-# 1. El contenedor ahora es "datalake" (No "airflow")
+#LOCAL_FILE_PATH = "/opt/airflow/data/mining_stdtravel.csv" 
+
+FILES_TO_UPLOAD = [
+    {
+        "local_path": "/opt/airflow/data/mining_stdtravel.csv",
+        "blob_name": "raw/airflow2/G6/archivo_subido_mining_stdtravel.csv"
+    },
+    {
+        "local_path": "/opt/airflow/data/mining_pittruck.csv",
+        "blob_name": "raw/airflow2/G6/archivo_subido_mining_pittruck.csv"
+    }
+]
+
 CONTAINER_NAME = "datalake" 
-# 2. Guardar en raw/airflow2/G6/... (Importante usar airflow2 para diferenciarse)
 BLOB_NAME = "raw/airflow2/G6/archivo_subido_mining_stdtravel.csv" 
-# 3. Utilizar la conexión enviada para el datalake de UTEC
 WASB_CONN_ID = "utec_blob_storage"
 
 default_args = {
@@ -31,16 +40,15 @@ def upload_avance_dag():
 
     @task
     def call_upload():
-        # Añade la fecha al archivo para evitar sobreescritura (buenas prácticas)
-        new_blob_name = add_date_suffix(BLOB_NAME)
-        
-        # Sube el archivo usando la nueva conexión y contenedor
-        upload_to_adls(
-            local_file_path=LOCAL_FILE_PATH,
-            container_name=CONTAINER_NAME,
-            blob_name=new_blob_name,
-            wasb_conn_id=WASB_CONN_ID
-        )
+        for file in FILES_TO_UPLOAD:
+            new_blob_name = add_date_suffix(file["blob_name"])
+            
+            upload_to_adls(
+                local_file_path=file["local_path"],
+                container_name=CONTAINER_NAME,
+                blob_name=new_blob_name,
+                wasb_conn_id=WASB_CONN_ID
+            )
 
     call_upload()
 
