@@ -39,7 +39,7 @@ def upload_avance_dag():
             local_file_path=LOCAL_FILE_PATH,
             container_name=CONTAINER_NAME,
             blob_name=new_blob_name,
-            wasb_conn_id=WASB_CONN_ID # ¡Diferencia clave con el Lab 2!
+            wasb_conn_id=WASB_CONN_ID
         )
 
     call_upload()
