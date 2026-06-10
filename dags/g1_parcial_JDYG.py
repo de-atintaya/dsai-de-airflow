@@ -6,8 +6,8 @@ import os
 
 BASE_LOCAL_PATH = "/opt/airflow/data"
 STAGING_LOCAL_PATH = "/opt/airflow/data/staging"
-CONTAINER_NAME = "airflow"
-BLOB_PREFIX = "raw/G1"
+CONTAINER_NAME = "datalake"
+BLOB_PREFIX = "raw/airflow2/G1"
 
 FOLDERS_TO_UPLOAD = [
     "sensor_archivo_notas",
