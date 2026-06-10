@@ -1,0 +1,21 @@
+venta_id,fecha_venta,cliente_id,producto_id,campania_id,vendedor_id,sede_id,canal_venta,tipo_cliente,segmento_cliente,zona_cliente,categoria_producto,cantidad,precio_unitario,costo_unitario,descuento,monto_bruto,monto_descuento,monto_total,margen_estimado,metodo_pago,estado_entrega,estado_venta
+V0001,2026-05-01,C001,P001,CAMP001,E001,S001,tienda,persona,retail,Lima Norte,tecnologia,1,2500.00,1900.00,0.00,2500.00,0.00,2500.00,600.00,tarjeta,entregado,completada
+V0002,2026-05-01,C002,P002,CAMP002,E002,S002,web,empresa,corporativo,Lima Centro,tecnologia,3,620.00,430.00,0.05,1860.00,93.00,1767.00,477.00,transferencia,entregado,completada
+V0003,2026-05-02,C003,P003,CAMP001,E003,S003,web,persona,retail,Lima Sur,accesorios,2,85.00,45.00,0.00,170.00,0.00,170.00,80.00,yape,entregado,completada
+V0004,2026-05-03,C004,P004,CAMP003,E001,S002,tienda,persona,retail,Lima Centro,accesorios,1,160.00,95.00,0.10,160.00,16.00,144.00,49.00,tarjeta,entregado,completada
+V0005,2026-05-04,C005,P005,CAMP004,E004,S004,corporativo,empresa,corporativo,Lima Este,mobiliario,5,480.00,310.00,0.08,2400.00,192.00,2208.00,658.00,transferencia,entregado,completada
+V0006,2026-05-04,C006,P006,CAMP002,E003,S001,web,persona,retail,Lima Norte,accesorios,1,320.00,210.00,0.00,320.00,0.00,320.00,110.00,tarjeta,en_transito,completada
+V0007,2026-05-05,C007,P001,CAMP004,E002,S002,corporativo,empresa,corporativo,Lima Centro,tecnologia,4,2500.00,1900.00,0.07,10000.00,700.00,9300.00,1700.00,transferencia,entregado,completada
+V0008,2026-05-06,C008,P007,CAMP003,E001,S003,tienda,persona,retail,Lima Sur,tecnologia,1,750.00,520.00,0.00,750.00,0.00,750.00,230.00,tarjeta,entregado,completada
+V0009,2026-05-07,C009,P008,CAMP001,E003,S001,web,persona,retail,Lima Norte,componentes,2,390.00,260.00,0.05,780.00,39.00,741.00,221.00,yape,entregado,completada
+V0010,2026-05-08,C010,P009,CAMP004,E004,S004,corporativo,empresa,corporativo,Lima Este,redes,6,210.00,130.00,0.06,1260.00,75.60,1184.40,404.40,transferencia,entregado,completada
+V0011,2026-05-09,C011,P010,CAMP002,E002,S002,web,persona,premium,Lima Centro,tecnologia,1,1100.00,790.00,0.03,1100.00,33.00,1067.00,277.00,tarjeta,en_transito,completada
+V0012,2026-05-10,C012,P003,CAMP003,E001,S003,tienda,persona,retail,Lima Sur,accesorios,1,85.00,45.00,0.00,85.00,0.00,85.00,40.00,efectivo,entregado,completada
+V0013,2026-05-11,C013,P011,CAMP004,E004,S002,corporativo,empresa,corporativo,Lima Centro,tecnologia,2,1850.00,1350.00,0.10,3700.00,370.00,3330.00,630.00,transferencia,entregado,completada
+V0014,2026-05-12,C014,P006,CAMP002,E003,S001,web,persona,retail,Lima Norte,accesorios,2,320.00,210.00,0.05,640.00,32.00,608.00,188.00,tarjeta,entregado,completada
+V0015,2026-05-13,C015,P012,CAMP004,E002,S002,corporativo,empresa,corporativo,Lima Centro,infraestructura,1,12500.00,9800.00,0.06,12500.00,750.00,11750.00,1950.00,transferencia,entregado,completada
+V0016,2026-05-14,C016,P004,CAMP001,E001,S004,web,persona,retail,Lima Este,accesorios,1,160.00,95.00,0.00,160.00,0.00,160.00,65.00,yape,en_transito,completada
+V0017,2026-05-15,C017,P008,CAMP003,E003,S003,tienda,persona,retail,Lima Sur,componentes,1,390.00,260.00,0.00,390.00,0.00,390.00,130.00,efectivo,entregado,completada
+V0018,2026-05-16,C018,P002,CAMP004,E004,S002,corporativo,empresa,corporativo,Lima Centro,tecnologia,8,620.00,430.00,0.12,4960.00,595.20,4364.80,924.80,transferencia,entregado,completada
+V0019,2026-05-17,C019,P013,CAMP002,E003,S001,web,persona,retail,Lima Norte,accesorios,1,220.00,145.00,0.00,220.00,0.00,220.00,75.00,tarjeta,entregado,completada
+V0020,2026-05-18,C020,P014,CAMP004,E002,S002,corporativo,empresa,corporativo,Lima Centro,software,20,45.00,18.00,0.05,900.00,45.00,855.00,495.00,transferencia,entregado,completada
