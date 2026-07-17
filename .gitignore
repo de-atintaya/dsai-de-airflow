@@ -1,14 +1,24 @@
-# Ignore environment variable files
-.env
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
 
-# Ignore system files
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Environment
+.env
+.venv/
+venv/
+
+# IDE
+.vscode/
+
+# Databricks temporary files
+.databricks/
+
+# OS
 .DS_Store
 Thumbs.db
-
-# Ignore Airflow Docker logs (if logs are outside of Airflow home directory)
-logs/
-
-__pycache__
-
-# Ignore all files inside data folder
-data/

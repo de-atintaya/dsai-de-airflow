@@ -82,3 +82,33 @@ Get Account Keys: https://learn.microsoft.com/en-us/azure/storage/common/storage
 - docker compose up -d: To turn on airflow and run it in background (Recommended)
 - docker compose down && docker compose up -d: Normal Restart
 - docker compose down && docker compose up --build -d: Restart forcing to build docker file (Only when dockerfile is updated)
+
+## Proyecto Final: Medallion Architecture y Data Mesh
+
+El proyecto final extiende el pipeline de ingesta desarrollado con Apache Airflow
+para implementar una arquitectura Medallion en Azure Databricks.
+
+### Problema de negocio
+
+Los reportes de ventas e inventario presentan inconsistencias debido a registros
+duplicados, datos erróneos y la ausencia de un maestro de productos confiable.
+
+Estas inconsistencias pueden generar cálculos incorrectos de ingresos, decisiones
+inadecuadas de reposición y retrasos en la disponibilidad de información para el negocio.
+
+### Arquitectura
+
+```text
+Archivos CSV
+    ↓
+Apache Airflow
+    ↓
+Azure Data Lake - Raw
+    ↓
+Databricks Bronze
+    ↓
+Databricks Silver
+    ↓
+Databricks Gold
+    ↓
+Data Products
